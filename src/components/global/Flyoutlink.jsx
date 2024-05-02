@@ -7,7 +7,7 @@ const NavLink = ({ title }) => {
     var content;
 
     switch (title) {
-        case 'About Us':
+        case 'About':
             content = AboutContent;
             break;
         case 'News':
@@ -16,6 +16,9 @@ const NavLink = ({ title }) => {
         case 'Events':
             content = EventsContent;
             break;
+        case 'किताब':
+            content = किताबContent;
+            break;
         case 'Blog':
             content = BlogContent;
             break;
@@ -23,7 +26,11 @@ const NavLink = ({ title }) => {
 
     return (
         <FlyoutLink href="#" FlyoutContent={content}>
-            <div className="flex items-center justify-center text-black duration-300 hover:text-orange-500 group">{title} <FaChevronDown className="ml-2 duration-500 group-hover:text-orange-400 group-hover:rotate-180" size={12.5} /></div>
+            {title === 'किताब' ?
+                <div className="flex items-center justify-center font-medium text-black duration-300 hover:text-orange-500 group">{title} <FaChevronDown className="ml-2 duration-500 group-hover:text-orange-400 group-hover:rotate-180" size={12.5} /></div>
+                :
+                <div className="flex items-center justify-center text-black duration-300 hover:text-orange-500 group">{title} <FaChevronDown className="ml-2 duration-500 group-hover:text-orange-400 group-hover:rotate-180" size={12.5} /></div>
+            }
         </FlyoutLink>
     );
 };
@@ -132,6 +139,51 @@ const EventsContent = () => {
                     Investiture Ceremony
                 </a>
 
+            </div>
+            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
+                Contact sales
+            </button> */}
+        </div>
+    );
+};
+
+const किताबContent = () => {
+    return (
+        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
+            <div className="space-y-3">
+                <a href="#" className="block text-sm font-semibold hover:underline">
+                    किताब
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 1
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 2
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 3
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 4
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 5
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 6
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 7
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 8
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 9
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Class 10
+                </a>
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
                 Contact sales

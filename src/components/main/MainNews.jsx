@@ -71,19 +71,19 @@ export default MainNews;
 
 const cards = [
     {
-        url: "https://source.unsplash.com/random/?school",
+        url: "https://source.unsplash.com/random/?sports_children",
         title: "Sports Day",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 1,
     },
     {
-        url: "https://source.unsplash.com/random/?library",
+        url: "https://source.unsplash.com/random/?kids_theatre",
         title: "Annual Day",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 2,
     },
     {
-        url: "https://source.unsplash.com/random/?maths",
+        url: "https://source.unsplash.com/random/?report_card",
         title: "Results Out",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 3,
@@ -101,13 +101,13 @@ const cards = [
         id: 5,
     },
     {
-        url: "https://source.unsplash.com/random/?laughter",
+        url: "https://source.unsplash.com/random/?children",
         title: "Children's Day",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 6,
     },
     {
-        url: "https://source.unsplash.com/random/?students",
+        url: "https://source.unsplash.com/random/?poetry",
         title: "Student Poem",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 7,

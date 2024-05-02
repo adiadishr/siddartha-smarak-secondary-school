@@ -16,14 +16,17 @@ const Navbar = () => {
     return (
         <>
             <div style={{ top: topPos ? 0 : 40 }} className='z-40 duration-300 w-full border-b-2 fixed md:flex px-[7.5%] bg-white md:justify-center justify-end items-center py-3'>
-                <ul className='flex-row items-center justify-center hidden w-full gap-16 tracking-tight font-merriwether lg:flex'>
-                    <li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li>
-                    <NavLink title='About Us' />
-                    <li className='duration-300 cursor-pointer hover:text-orange-500'>Academics</li>
-                    <NavLink title='News' />
-                    <NavLink title='Events' />
-                    <NavLink title='Blog' />
-                    <li className='duration-300 cursor-pointer hover:text-orange-500'>Contact</li>
+                <ul className='flex-row items-center justify-between hidden w-full tracking-tight font-merriwether lg:flex'>
+                    <div className='flex items-center justify-center gap-8'>
+                        <li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li>
+                        <NavLink title='About' />
+                        <li className='duration-300 cursor-pointer hover:text-orange-500'>Academics</li>
+                        <NavLink title='News' />
+                        <NavLink title='Events' />
+                        <NavLink title='Blog' />
+                        <NavLink title='किताब' />
+                        <li className='duration-300 cursor-pointer hover:text-orange-500'>Contact</li>
+                    </div>
                     <button id='admissionButton' className='px-4 py-[10px] text-white bg-orange-500 border-2 border-transparent rounded-xl hover:opacity-80 duration-300  '>Admissions</button>
                 </ul>
                 <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight font-merriwether lg:hidden'>
