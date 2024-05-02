@@ -24,7 +24,7 @@ const Popup = () => {
         popup ?
             <div className='fixed inset-0 top-0 z-50 flex items-center justify-center w-full h-screen bg-black/50 backdrop-blur-sm'>
                 <button onClick={() => setPopup(!popup)} className='absolute text-4xl text-white right-4 top-4'><IoClose /></button>
-                <div data-aos="fade-up" className='flex h-[80vh] w-full mx-[20%] bg-white items-center justify-center'>
+                <div data-aos="fade-up" className='flex h-[80vh] w-full mx-[5%] sm:mx-[10%] md:mx-[20%] bg-white items-center justify-center'>
                     <h1 className='text-6xl text-black'>POPUP</h1>
                 </div>
             </div>
