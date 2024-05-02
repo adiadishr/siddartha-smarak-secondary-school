@@ -5,7 +5,7 @@ const AboutHero = () => {
         <div className='mt-[114px] pt-24 pb-28 px-[5%]'>
             <div className='flex flex-col'>
                 <div className='flex flex-col w-full gap-12'>
-                    <div className='pb-2 text-2xl font-bold uppercase border-b-2 w-max md:w-max text-sky-900 border-stone-200 font-merriwether'>About Us</div>
+                    <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>About Us</div>
                     <div className='flex flex-col w-full gap-12 md:flex-row'>
                         <div className='flex flex-col w-full gap-4 md:w-1/2'>
                             <div className='text-2xl/[110%] text-stone-700 font-merriwether pt-4'>An Introduction</div>

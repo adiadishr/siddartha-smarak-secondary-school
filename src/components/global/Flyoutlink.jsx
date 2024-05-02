@@ -86,10 +86,10 @@ const AboutContent = () => {
                     History
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    Mission, Vision & Objective
+                    Resources
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    Resources
+                    Mission, Vision & Objective
                 </a>
                 <a href="#" className="block text-sm hover:underline">
                     Message From the Principal
