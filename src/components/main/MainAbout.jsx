@@ -25,7 +25,7 @@ const MainAbout = () => {
                         <div className='w-full text-center text-base/[150%] px-[10%] font-manrope text-stone-700'>To provide a nurturing environment where every student is empowered to achieve academic excellence, personal growth, and social responsibility.
 
                         </div>
-                        <div className='absolute px-[15%] py-4 text-white bg-sky-900 rounded-lg -bottom-5 font-manrope group-hover:bg-white group-hover:text-sky-900 group-hover:font-bold duration-300 border-2 border-sky-900'>Our Vison</div>
+                        <div className='absolute px-[15%] py-4 text-white bg-sky-900 rounded-lg -bottom-5 font-manrope group-hover:bg-white group-hover:text-sky-900 group-hover:font-bold duration-300 border-2 border-sky-900'>Our Mission</div>
                     </div>
                     {/* Card 2 */}
                     <div className='flex-col group border-r-2 hover:translate-y-[-2rem] md:hover:translate-y-[-4rem] cursor-pointer  border-b-4  border-sky-900 bg-white flex items-center gap-8 md:h-[26rem] h-[30rem] rounded-xl hover:shadow-lg duration-500 shadow-orange-200 relative w-full md:translate-y-[-2rem]'>
