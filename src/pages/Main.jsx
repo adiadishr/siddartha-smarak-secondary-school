@@ -1,3 +1,4 @@
+import Footer from '@/components/global/Footer'
 import MainAbout from '@/components/main/MainAbout'
 import MainCarousel from '@/components/main/MainCarousel'
 import MainGallery from '@/components/main/MainGallery'
@@ -16,6 +17,7 @@ const Main = () => {
             <MainAbout />
             <MainGallery />
             <MainNews /> 
+            <Footer />
         </>
     )
 }

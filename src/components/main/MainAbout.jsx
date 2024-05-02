@@ -9,7 +9,7 @@ const MainAbout = () => {
                     <div className='text-xl tracking-wide text-stone-500 font-manrope '>What do we <span className='text-2xl font-bold text-orange-500 uppercase font-merriwether'>AIM</span> for?</div>
                     <div className='text-xl text-stone-800 font-merriwether'>Our Mission, Vision and Objective</div>
                 </div>
-                <div className='flex flex-col items-center justify-center w-full gap-24 md:gap-8 px-[15%] md:px-0 md:flex-row'>
+                <div className='flex flex-col items-center justify-center w-full gap-24 md:gap-8 px-[5%] sm:px-[10%] md:px-0 md:flex-row'>
                     {/* Card 1 */}
                     <div className='flex-col group border-r-2 hover:translate-y-[-2rem] cursor-pointer  border-b-4  border-sky-900 bg-white flex items-center gap-8 md:h-[26rem] h-[30rem] rounded-xl hover:shadow-lg duration-500 shadow-orange-200 relative w-full'>
                         <div className='flex items-center justify-center md:mt-8 mt-24 text-white bg-gradient-to-br from-sky-800 to-sky-950 rounded-full size-36 group-hover:rotate-[360deg] duration-1000 ease-in-out'>

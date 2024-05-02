@@ -18,7 +18,6 @@ const App = () => {
       <Topbar />
       <Navbar />
       <Main />
-      <Footer />
       <Books />
       <About />
     </>
