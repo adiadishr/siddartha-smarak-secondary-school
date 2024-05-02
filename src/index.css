@@ -77,3 +77,8 @@
     @apply bg-stone-50 text-foreground;
   }
 }
+
+#admissionButton:active {
+  transition-duration: 100ms;
+  transform: scale(.9);
+}

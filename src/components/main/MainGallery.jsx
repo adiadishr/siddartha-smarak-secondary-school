@@ -6,7 +6,7 @@ import photo4 from '../../assets/1.jpg'
 
 const MainGallery = () => {
     return (
-        <div className='flex pb-48 md:pb-36  px-[5%] w-full items-center justify-center'>
+        <div className='flex pb-48 md:pb-36 px-[5%] w-full items-center justify-center'>
             <div className='flex flex-col w-full gap-16 md:flex-row'>
                 <div className='flex flex-col gap-4 md:w-1/2'>
                     <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>Focus on Holistic Growth</div>
@@ -18,11 +18,11 @@ const MainGallery = () => {
                     </div>
                 </div>
                 <div className='flex gap-4 md:w-1/2'>
-                    <div className='flex flex-col gap-8 translate-y-8 sm:w-1/2'>
+                    <div className='flex flex-col w-1/2 gap-8 translate-y-8'>
                         <div className='relative hover:translate-y-[-10px] duration-300 cursor-pointer'><img className='rounded-xl border-t-8 border-b-[72px] border-x-8 border-white shadow-xl' src={photo1} alt={photo1} /> <div className='absolute bottom-0 w-full pb-6 text-xl tracking-tight text-center text-black font-merriwether '>Teacher's day</div> </div>
                         <div className='relative hover:translate-y-[-10px] duration-300 cursor-pointer'><img className='rounded-xl border-t-8 border-b-[72px] border-x-8 border-white shadow-xl' src={photo4} alt={photo1} /> <div className='absolute bottom-0 w-full pb-6 text-xl tracking-tight text-center text-black font-merriwether '>Teacher's day</div></div>
                     </div>
-                    <div className='flex flex-col gap-8 translate-y-16 sm:w-1/2'>
+                    <div className='flex flex-col w-1/2 gap-8 translate-y-16'>
                         <div className='relative hover:translate-y-[-10px] duration-300 cursor-pointer'><img className='rounded-xl border-t-8 border-b-[72px] border-x-8 border-white shadow-xl' src={photo2} alt={photo1} /><div className='absolute bottom-0 w-full pb-6 text-xl tracking-tight text-center text-black font-merriwether '>Cultural Day</div></div>
                         <div className='relative hover:translate-y-[-10px] duration-300 cursor-pointer'><img className='rounded-xl border-t-8 border-b-[72px] border-x-8 border-white shadow-xl' src={photo3} alt={photo1} /><div className='absolute bottom-0 w-full pb-6 text-xl tracking-tight text-center text-black font-merriwether '>Sports Day</div></div>
                     </div>

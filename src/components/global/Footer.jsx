@@ -11,8 +11,8 @@ const Footer = () => {
                 </div>
                 <div>
                     <form className='flex' action="">
-                        <input placeholder={'Enter your email:'} className='px-6 py-3 text-xs tracking-wider text-white bg-transparent border border-white outline-none font-manrope placeholder:text-white' type="email" />
-                        <input className='px-6 font-bold transition-all duration-500 bg-white cursor-pointer hover:rounded-r-xl text-sky-900 font-manrope' type="submit" />
+                        <input placeholder={'Enter your email:'} className='px-6 py-3 text-xs tracking-wider text-white bg-transparent border border-r-0 border-white outline-none font-manrope placeholder:text-white' type="email" />
+                        <input className='px-6 font-bold transition-all duration-300 bg-white cursor-pointer hover:text-sky-600 text-sky-900 font-manrope' type="submit" />
                     </form>
                 </div>
             </div>

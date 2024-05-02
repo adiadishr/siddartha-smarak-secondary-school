@@ -2,14 +2,23 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa6";
 
-const Example = ({ title, content }) => {
+const NavLink = ({ title }) => {
 
-    switch (content) {
-        case 'about':
+    var content;
+
+    switch (title) {
+        case 'About Us':
             content = AboutContent;
             break;
-        default:
-            content = PricingContent;
+        case 'News':
+            content = NewsContent;
+            break;
+        case 'Events':
+            content = EventsContent;
+            break;
+        case 'Blog':
+            content = BlogContent;
+            break;
     }
 
     return (
@@ -49,42 +58,11 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
                         transition={{ duration: 0.3, ease: "easeOut" }}
                         className="absolute text-black bg-white left-1/2 top-16"
                     >
-                        <div className="absolute top-0 w-4 h-4 rotate-45 -translate-x-1/2 -translate-y-1/2 bg-white border-t-2 border-l-2 border-orange-400 left-1/2" />
+                        <div className="absolute top-0 w-4 h-4 duration-300 rotate-45 -translate-x-1/2 -translate-y-1/2 bg-white border-t-2 border-l-2 border-orange-400 left-1/2" />
                         <FlyoutContent />
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
-    );
-};
-
-const PricingContent = () => {
-    return (
-        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
-            <div className="mb-3 space-y-3">
-                <h3 className="font-semibold font-merriwether">Introduction</h3>
-                <a href="#" className="block text-sm hover:underline">
-                    Introduction
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Pay as you go
-                </a>
-            </div>
-            <div className="mb-3 space-y-3">
-                <h3 className="font-semibold">For Companies</h3>
-                <a href="#" className="block text-sm hover:underline">
-                    Startups
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    SMBs
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Enterprise
-                </a>
-            </div>
-            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
-                Contact sales
-            </button> */}
         </div>
     );
 };
@@ -98,16 +76,16 @@ const AboutContent = () => {
                     Introduction
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    Pay as you go
+                    History
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    Startups
+                    Mission, Vision & Objective
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    SMBs
+                    Resources
                 </a>
                 <a href="#" className="block text-sm hover:underline">
-                    Enterprise
+                    Message From the Principal
                 </a>
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
@@ -117,4 +95,77 @@ const AboutContent = () => {
     );
 };
 
-export default Example;
+const NewsContent = () => {
+    return (
+        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
+            <div className="space-y-3">
+                <h3 className="font-semibold">News</h3>
+                <a href="#" className="block text-sm hover:underline">
+                    Latest News
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Notices
+                </a>
+            </div>
+            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
+                Contact sales
+            </button> */}
+        </div>
+    );
+};
+
+const EventsContent = () => {
+    return (
+        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
+            <div className="space-y-3">
+                <h3 className="font-semibold">Events</h3>
+                <a href="#" className="block text-sm hover:underline">
+                    Latest Events
+                </a>
+                <a href="#" className="block text-sm font-semibold hover:underline">
+                    Recurring Events
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Annual Day
+                </a>
+                <a href="#" className="block text-sm hover:underline">
+                    Investiture Ceremony
+                </a>
+
+            </div>
+            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
+                Contact sales
+            </button> */}
+        </div>
+    );
+};
+
+const BlogContent = () => {
+    return (
+        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
+            <div className="space-y-3">
+                <h3 className="font-semibold">Blogs</h3>
+                <a href="#" className="block text-sm hover:underline">
+                    Latest Blogs
+                </a>
+                <a href="#" className="block text-sm font-semibold hover:underline">
+                    Featured Blogs
+                </a>
+                <a href="#" className="block text-sm italic hover:underline">
+                    My Journey In Siddartha Smarak ~ Puja Poon
+                </a>
+                <a href="#" className="block text-sm italic hover:underline">
+                    मेरो यात्रा ~ Ankit Bhusal
+                </a>
+                <a href="#" className="block text-sm italic hover:underline">
+                    नेपाली हाउ, नेपाल मा बसौ ~ Jeshan Pradhan
+                </a>
+            </div>
+            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
+                Contact sales
+            </button> */}
+        </div>
+    );
+};
+
+export default NavLink;
