@@ -7,7 +7,7 @@ const MainAbout = () => {
             <div className="flex flex-col w-full gap-24">
                 <div className='flex flex-col items-center w-full gap-2'>
                     <div className='text-xl tracking-wide text-stone-500 font-manrope '>What do we <span className='text-2xl font-bold text-orange-500 uppercase font-merriwether'>AIM</span> for?</div>
-                    <div className='text-xl text-stone-800 font-merriwether'>Our Mission, Vision and Objective</div>
+                    <div className='w-full text-center text-2xl/[110%] text-stone-700 font-merriwether'>Our Mission, Vision and Objective</div>
                 </div>
                 <div className='flex flex-col items-center justify-center w-full gap-24 md:gap-8 px-[5%] sm:px-[10%] md:px-0 md:flex-row'>
                     {/* Card 1 */}
