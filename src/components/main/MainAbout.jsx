@@ -1,9 +1,16 @@
+import React, { useRef } from 'react';
+import UseScrollTo from '../utilities/UseScrollTo';
 import { FaGraduationCap, FaTrophy } from "react-icons/fa";
 import { FaPersonCircleCheck } from "react-icons/fa6";
 
 const MainAbout = () => {
+
+    const missionVisionRef = useRef(null);
+    UseScrollTo('mission');
+
     return (
-        <div className='w-full flex px-[7.5%] pb-48'>
+        <div className='w-full flex px-[7.5%] pb-48 relative'>
+            <div ref={missionVisionRef} id='mission' className='absolute top-[-7.5rem]' />
             <div className="flex flex-col w-full gap-24">
                 <div className='flex flex-col items-center w-full gap-2'>
                     <div className='text-xl tracking-wide text-stone-500 font-manrope '>What do we <span className='text-2xl font-bold text-orange-500 uppercase font-merriwether'>AIM</span> for?</div>

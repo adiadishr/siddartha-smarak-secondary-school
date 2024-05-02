@@ -1,5 +1,6 @@
 import React from 'react'
 import book from '../../assets/book.jpg'
+import { Link } from "react-router-dom"
 
 const MainHero = () => {
     return (
@@ -14,7 +15,7 @@ const MainHero = () => {
                     <div className='pt-4'>Housing a vibrant community of over 600 students, Siddhartha Smarak Secondary School offers state-of-the-art facilities and resources conducive to learning.</div>
                     <div className='pt-4'>With a dedicated faculty and a nurturing environment, we strive to empower every student to reach their full potential.</div>
                     <div className='pt-4'>Join us at Siddhartha Smarak Secondary School and embark on a journey of academic excellence and personal growth.</div>
-                    <button className='flex px-4 py-1 mt-8 text-white duration-75 bg-orange-500 hover:bg-orange-400 rounded-xl font-merriwether w-max active:scale-90'>Read More</button>
+                    <Link to='/About' className='flex px-4 py-1 mt-8 text-white duration-75 bg-orange-500 hover:bg-orange-400 rounded-xl font-merriwether w-max active:scale-90'>Read More</Link>
                 </div>
             </div>
         </div>

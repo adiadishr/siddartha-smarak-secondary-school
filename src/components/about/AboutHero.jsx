@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import UseScrollTo from '../utilities/UseScrollTo';
 
 const AboutHero = () => {
+
+    const historySectionRef = useRef(null);
+    UseScrollTo('history');
+
     return (
         <div className='mt-[114px] pt-24 pb-28 px-[5%]'>
             <div className='flex flex-col'>
@@ -17,7 +22,8 @@ const AboutHero = () => {
                             <img src="https://source.unsplash.com/random/?school" className='flex rounded-3xl' alt="" />
                         </div>
                     </div>
-                    <div className='flex flex-col w-full gap-12 md:flex-row'>
+                    <div className='relative flex flex-col w-full gap-12 md:flex-row'>
+                        <div ref={historySectionRef} id='history' className='absolute top-[-7.5rem]' />
                         <div className='flex flex-col w-full gap-4 md:w-1/2'>
                             <div className='text-2xl/[110%] text-stone-700 font-merriwether pt-4'>History</div>
                             <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-4'>

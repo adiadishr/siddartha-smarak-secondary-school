@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa6";
+import { Link } from "react-router-dom"
 
 const NavLink = ({ title }) => {
 
@@ -79,25 +80,22 @@ const AboutContent = () => {
         <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
             <div className="space-y-3">
                 <h3 className="font-semibold">About Us</h3>
-                <a href="#" className="block text-sm hover:underline">
+                <Link className="block text-sm hover:underline" to='/About'>
                     Introduction
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    History
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Resources
-                </a>
-                <a href="#" className="block text-sm hover:underline">
+                </Link>
+                <Link className="block text-sm hover:underline" to='/About#history'>
+                    History & Resources
+                </Link>
+                <Link className="block text-sm hover:underline" to='/About#mission'>
                     Mission, Vision & Objective
-                </a>
-                <a href="#" className="block text-sm hover:underline">
+                </Link>
+                <Link className="block text-sm hover:underline" to='/About#message'>
                     Message From the Principal
-                </a>
+                </Link>
+                <Link className="block text-sm hover:underline" to='/About#staff'>
+                    Faculty & Administrative Staff
+                </Link>
             </div>
-            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
-                Contact sales
-            </button> */}
         </div>
     );
 };
@@ -151,43 +149,40 @@ const किताबContent = () => {
     return (
         <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
             <div className="space-y-3">
-                <a href="#" className="block text-sm font-semibold hover:underline">
+                <Link className="block text-sm font-semibold hover:underline" to='/Books'>
                     किताब
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 1
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 2
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 3
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 4
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 5
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 6
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 7
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 8
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 9
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Class 10
-                </a>
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#classone'>
+                    कक्षा १
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#classone'>
+                    कक्षा २
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class3n4'>
+                    कक्षा ३
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class3n4'>
+                    कक्षा ४
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class5n6'>
+                    कक्षा ५
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class5n6'>
+                    कक्षा ६
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class7n8'>
+                    कक्षा ७
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#class7n8'>
+                    कक्षा ८
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#classnine'>
+                    कक्षा ९
+                </Link>
+                <Link className="block text-sm hover:underline" to='/Books#classnine'>
+                    कक्षा १०
+                </Link>
             </div>
-            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
-                Contact sales
-            </button> */}
         </div>
     );
 };

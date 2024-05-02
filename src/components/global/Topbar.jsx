@@ -1,16 +1,14 @@
 import { FaPhone, FaFacebook, FaInstagram } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
-import { TopScroll } from '../utilities/TopScroll';
 
 
 
 const Topbar = () => {
 
-    const topPos = TopScroll();
 
     return (
-        <div id="topbar" style={{ top: topPos ? -40 : 0 }}
-            className='bg-sky-900 fixed z-40 flex w-full py-2 items-center justify-end md:justify-between px-[7.5%] text-white transition-all duration-300 '>
+        <div id="topbar"
+            className='bg-sky-900 fixed z-10 flex w-full py-2 items-center justify-end md:justify-between px-[7.5%] text-white transition-all duration-300  top-0'>
             <div className='items-center justify-center hidden gap-2 md:flex'><IoMdMail /> Email: info@abcsecondaryschool.com</div>
             <div className='flex justify-between w-full gap-8 tracking-tight divide-orange-200 md:divide-x md:justify-center md:w-max'>
                 <div className="flex items-center justify-center gap-2"><FaPhone />Call: 123 4561 5523</div>
