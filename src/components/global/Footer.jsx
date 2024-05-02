@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* Footer */}
-            <div className='w-full py-24 h-96 px-[7.5%]'>
+            <div className='w-full py-24 h-max px-[7.5%]'>
                 <div className='flex flex-col justify-between w-full gap-24 md:gap-12 md:flex-row'>
                     <div className='flex gap-24'>
                         <div className='flex flex-col gap-2 tracking-tight'>
@@ -39,7 +39,7 @@ const Footer = () => {
                             </span>Academics</div>
                         </div>
                     </div>
-                    <div className='flex items-center justify-start w-full h-24 mb-24 md:mb-0 md:w-max'>
+                    <div className='flex items-center justify-start w-full mb-24 h-max md:mb-0 md:w-max'>
                         <iframe
                             className='flex w-full border-none md:w-max rounded-xl'
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14130.946795029693!2d85.34463115!3d27.694531700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1714392621439!5m2!1sen!2snp"
@@ -50,7 +50,6 @@ const Footer = () => {
                         ></iframe>
                     </div>
                 </div>
-
             </div>
         </div>
     )
