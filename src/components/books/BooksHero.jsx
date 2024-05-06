@@ -3,6 +3,7 @@ import BooksFirstRow from './BooksFirstRow'
 import BooksSecondRow from './BooksSecondRow'
 import BooksThirdRow from './BooksThirdRow'
 import BooksFourthRow from './BooksFourthRow'
+import BooksFifthRow from './BooksFifthRow'
 
 const BooksHero = () => {
 
@@ -14,7 +15,7 @@ const BooksHero = () => {
                 <BooksSecondRow />
                 <BooksThirdRow />
                 <BooksFourthRow />
-                <BooksFirstRow />
+                <BooksFifthRow />
                 
                 
                 

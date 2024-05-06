@@ -11,8 +11,8 @@ const NavLink = ({ title }) => {
         case 'About':
             content = AboutContent;
             break;
-        case 'News':
-            content = NewsContent;
+        case 'News & Events':
+            content = NewsAndEventsContent;
             break;
         case 'Events':
             content = EventsContent;
@@ -100,7 +100,7 @@ const AboutContent = () => {
     );
 };
 
-const NewsContent = () => {
+const NewsAndEventsContent = () => {
     return (
         <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
             <div className="space-y-3">
@@ -111,32 +111,19 @@ const NewsContent = () => {
                 <a href="#" className="block text-sm hover:underline">
                     Notices
                 </a>
-            </div>
-            {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
-                Contact sales
-            </button> */}
-        </div>
-    );
-};
-
-const EventsContent = () => {
-    return (
-        <div className="w-64 p-6 bg-white border-t-2 border-orange-400 shadow-xl">
-            <div className="space-y-3">
                 <h3 className="font-semibold">Events</h3>
                 <a href="#" className="block text-sm hover:underline">
                     Latest Events
                 </a>
-                <a href="#" className="block text-sm font-semibold hover:underline">
+                <h3 href="#" className="block text-sm font-semibold">
                     Recurring Events
-                </a>
+                </h3>
                 <a href="#" className="block text-sm hover:underline">
                     Annual Day
                 </a>
                 <a href="#" className="block text-sm hover:underline">
                     Investiture Ceremony
                 </a>
-
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
                 Contact sales

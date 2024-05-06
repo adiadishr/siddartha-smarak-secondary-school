@@ -40,8 +40,7 @@ const Navbar = () => {
                         <Link onClick={routeTo} to='/'><li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li></Link>
                         <Link onClick={routeTo} to='/About'><NavLink title='About' /></Link>
                         <li className='duration-300 cursor-pointer hover:text-orange-500'>Academics</li>
-                        <NavLink title='News' />
-                        <NavLink title='Events' />
+                        <NavLink title='News & Events' />
                         <NavLink title='Blog' />
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>
                         <li className='duration-300 cursor-pointer hover:text-orange-500'>Contact</li>

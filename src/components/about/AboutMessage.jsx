@@ -11,16 +11,14 @@ const AboutMessage = () => {
             <div ref={messageRef} className='absolute top-[-7.5rem]' id='message' />
             <div className='flex flex-col gap-4'>
                 <div className='pb-2 text-2xl font-bold uppercase border-b-2 w-max md:w-max text-sky-900 border-stone-200 font-merriwether'>Message from the Principal</div>
-                <div className='flex flex-col w-full gap-32 md:flex-row'>
-                    <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-8 flex flex-col w-full'>
+                <div className='flex flex-col w-full gap-12 md:gap-32 md:flex-row'>
+                    <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-8 flex flex-col w-full md:order-1 order-2'>
                         <div>At Siddhartha Smarak Secondary School , we believe in fostering a seamless and transparent admission process to welcome prospective students into our community. To begin the journey towards enrollment, interested parents or guardians are invited to visit our school campus for a personalized tour and to meet with our admissions team. Following this initial visit, families can obtain an admissions packet containing all necessary forms and information.</div>
                         <div>Once the application forms are completed, along with any required documentation, they can be submitted to the admissions office either in person or electronically. Our admissions team carefully reviews each application, considering factors such as academic achievement, extracurricular involvement, and character.</div>
                     </div>
-                    <div style={{
-                        backgroundImage: `url(https://source.unsplash.com/random/?old_man`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center center",
-                    }} className='flex w-full h-full border-b-8 border-r-8 shadow-lg brightness-[.6] duration-300 hover:brightness-75 saturate-50 rounded-xl hover:saturate-100 border-sky-800' />
+                    <div className='flex order-1 w-full h-full shadow-lg md:order-2 ' >
+                        <img src='https://source.unsplash.com/random/?white_man' className='object-cover object-center border-b-8 brightness-[.6] duration-300 hover:brightness-75 saturate-50 hover:saturate-100 border-r-8 border-sky-800 rounded-xl' alt="Image of the Principal" />
+                    </div>
                 </div>
             </div>
         </div>
