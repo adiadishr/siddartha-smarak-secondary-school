@@ -12,17 +12,17 @@ const MainCarousel = () => {
         <Carousel
             orientation="horizontal"
             opts={{ loop: true }} // Optional: Set options for the carousel
-            className="relative h-[calc(100vh-114px)] overflow-hidden mt-[114px]" // Make the carousel full-screen
+            className="relative h-[calc(100vh-114px)] mt-[114px]" // Make the carousel full-screen
         >
             <CarouselContent>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-full brightness-50" />
+                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
                 </CarouselItem>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-full brightness-50" />
+                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
                 </CarouselItem>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-full brightness-50" />
+                    <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
                 </CarouselItem>
                 {/* Add more CarouselItem components for additional slides */}
             </CarouselContent>
