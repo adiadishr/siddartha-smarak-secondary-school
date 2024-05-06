@@ -1,10 +1,34 @@
-import React from 'react'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import { ImQuotesLeft } from "react-icons/im"
 
 const MainCarousel = () => {
     return (
-        <div className='min-h-screen bg-black mt-[98px]'>
-
-        </div>
+        <Carousel
+            orientation="horizontal"
+            opts={{ loop: true }} // Optional: Set options for the carousel
+            className="relative h-max md:h-screen overflow-hidden mt-[114px]" // Make the carousel full-screen
+        >
+            <CarouselContent>
+                <CarouselItem>
+                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-full brightness-50" />
+                </CarouselItem>
+                <CarouselItem>
+                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-full brightness-50" />
+                </CarouselItem>
+                <CarouselItem>
+                    <img src="https://source.unsplash.com/random/playground" alt="Slide 2" className="object-cover w-full h-full brightness-50" />
+                </CarouselItem>
+                {/* Add more CarouselItem components for additional slides */}
+            </CarouselContent>
+            <CarouselPrevious className="border-transparent bg-white/25 size-12" />
+            <CarouselNext className="border-transparent bg-white/25 size-12" />
+        </Carousel>
     )
 }
 

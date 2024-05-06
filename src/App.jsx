@@ -17,8 +17,8 @@ const App = () => {
 
   return (
     <>
+      <Popup />
       <Router>
-        <Popup />
         <Topbar />
         <Navbar />
         <Switch>
