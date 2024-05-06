@@ -17,10 +17,10 @@ const App = () => {
 
   return (
     <>
-      <Popup />
       <Router>
         <Topbar />
         <Navbar />
+        <Popup />
         <Switch>
           <Route exact path='/' component={Main} />
           <Route exact path='/About' component={About} />

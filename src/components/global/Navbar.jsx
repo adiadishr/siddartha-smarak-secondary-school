@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div style={{ top: topPos ? 0 : 40 }} className='z-30 duration-300 w-full border-b-2 fixed lg:flex px-[7.5%] bg-white lg:justify-center justify-end items-center py-3'>
+            <div style={{ top: topPos ? 0 : 40 }} className='z-30 duration-300 w-full border-b-2 fixed lg:flex px-[7.5%] bg-white lg:justify-center justify-end items-center py-3 min-h-[74px]'>
                 <ul className='flex-row items-center justify-between hidden w-full tracking-tight lg:flex font-merriwether'>
                     <div className='flex items-center justify-center gap-8'>
                         <Link onClick={routeTo} to='/'><li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li></Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </div>
                     <button id='admissionButton' className='px-4 py-[10px] text-white bg-orange-500 border-2 border-transparent rounded-xl hover:opacity-80 duration-300  '>Admissions</button>
                 </ul>
-                <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight lg:hidden font-merriwether'>
+                <ul className='flex flex-row items-center justify-end w-full gap-16 mt-[6px] tracking-tight lg:hidden font-merriwether'>
                     <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
                         <motion.button
                             onClick={toggleNav}
@@ -99,7 +99,7 @@ const Navbar = () => {
                 ?
                 <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 h-screen bg-white/10 backdrop-blur-xl'>
                     <div style={{ top: topPos ? 0 : 40 }} className='w-full fixed px-[7.5%] justify-end items-center py-3'>
-                        <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight lg:hidden font-merriwether'>
+                        <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight lg:hidden font-merriwether mt-[6px]'>
                             <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
                                 <motion.button
                                     onClick={toggleNav}
