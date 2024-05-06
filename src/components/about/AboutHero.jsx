@@ -7,7 +7,7 @@ const AboutHero = () => {
     UseScrollTo('history');
 
     return (
-        <div className='mt-[114px] pt-24 pb-28 px-[5%]'>
+        <div className='pt-12 mt-[114px] pb-28 px-[5%]'>
             <div className='flex flex-col'>
                 <div className='flex flex-col w-full gap-12'>
                     <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>About Us</div>

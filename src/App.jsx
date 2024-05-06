@@ -9,6 +9,7 @@ import Navbar from './components/global/Navbar'
 import Main from './pages/Main'
 import Books from './pages/Books'
 import About from './pages/About'
+import Contact from './pages/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
@@ -25,6 +26,7 @@ const App = () => {
           <Route exact path='/' component={Main} />
           <Route exact path='/About' component={About} />
           <Route exact path='/Books' component={Books} />
+          <Route exact path='/Contact' component={Contact} />
         </Switch>
       </Router>
     </>

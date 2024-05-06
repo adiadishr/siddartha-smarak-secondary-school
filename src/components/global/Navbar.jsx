@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { TopScroll } from '../utilities/TopScroll';
 import NavLink from '@/components/global/Flyoutlink';
 import { Link } from "react-router-dom"
+import AdmissionDrawer from './AdmissionDrawer';
 
 const Navbar = () => {
 
@@ -43,12 +44,13 @@ const Navbar = () => {
                         <NavLink title='News & Events' />
                         <NavLink title='Blog' />
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>
-                        <li className='duration-300 cursor-pointer hover:text-orange-500'>Contact</li>
+                        <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Contact</Link>
                     </div>
-                    <button id='admissionButton' className='px-4 py-[10px] text-white bg-orange-500 border-2 border-transparent rounded-xl hover:opacity-80 duration-300  '>Admissions</button>
+                    <AdmissionDrawer />
                 </ul>
-                <ul className='flex flex-row items-center justify-end w-full gap-16 mt-[6px] tracking-tight lg:hidden font-merriwether'>
+                <ul className='flex flex-row items-center justify-end w-full gap-8 mt-[6px] tracking-tight lg:hidden font-merriwether'>
                     <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
+
                         <motion.button
                             onClick={toggleNav}
                             className='relative z-50 text-black duration-300 hover:text-orange-500 size-10'
@@ -97,7 +99,7 @@ const Navbar = () => {
             </div>
             {nav
                 ?
-                <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 h-screen bg-white/10 backdrop-blur-xl'>
+                <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 flex flex-col h-screen bg-white/10 backdrop-blur-xl'>
                     <div style={{ top: topPos ? 0 : 40 }} className='w-full fixed px-[7.5%] justify-end items-center py-3'>
                         <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight lg:hidden font-merriwether mt-[6px]'>
                             <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
