@@ -12,6 +12,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from "./components/global/Footer";
 AOS.init();
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path='/Books' component={Books} />
           <Route exact path='/Contact' component={Contact} />
         </Switch>
+        <Footer />
       </Router>
     </>
   )

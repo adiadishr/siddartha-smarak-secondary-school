@@ -5,14 +5,13 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
-import { ImQuotesLeft } from "react-icons/im"
 
 const MainCarousel = () => {
     return (
         <Carousel
             orientation="horizontal"
-            opts={{ loop: true }} // Optional: Set options for the carousel
-            className="relative h-[calc(100vh-114px)] mt-[114px]" // Make the carousel full-screen
+            opts={{ loop: true }}
+            className="relative h-[calc(100vh-114px)] mt-[114px]"
         >
             <CarouselContent>
                 <CarouselItem>
@@ -24,7 +23,6 @@ const MainCarousel = () => {
                 <CarouselItem>
                     <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
                 </CarouselItem>
-                {/* Add more CarouselItem components for additional slides */}
             </CarouselContent>
             <CarouselPrevious className="border-transparent bg-white/25 size-12" />
             <CarouselNext className="border-transparent bg-white/25 size-12" />

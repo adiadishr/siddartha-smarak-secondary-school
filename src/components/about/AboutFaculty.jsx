@@ -43,8 +43,7 @@ const AboutFaculty = () => {
     const staffSectionRef = useRef(null);
     UseScrollTo('staff');
 
-    // Define staffs array with calculated delays
-    const staffs = [
+        const staffs = [
         {
             url: "https://source.unsplash.com/random/?teacher",
             name: "Rajesh Udas",
@@ -117,7 +116,7 @@ const AboutFaculty = () => {
 const Staff = ({ staff }) => {
     return (
         <div data-aos='fade-up' data-aos-delay={staff.delay} data-aos-duration='300' key={staff.id} className='group flex flex-col w-full sm:w-[45%] md:w-[30%] bg-white shadow-lg rounded-2xl overflow-hidden'>
-            <div className='overflow-hidden'><img className='flex object-cover object-center w-full duration-300 h-80 group-hover:scale-110' src={staff.url} alt="" /></div>
+            <div className='overflow-hidden'><img className='flex object-cover object-center w-full duration-500 h-80 group-hover:scale-110 saturate-0 group-hover:saturate-100' src={staff.url} alt="" /></div>
             <div className='w-full pt-8 pb-2 text-xl text-center text-neutral-800 font-merriwether'>{staff.name}</div>
             <div className='w-full pb-8 text-base text-center text-black font-manrope'>{staff.position}</div>
         </div>
