@@ -1,73 +1,45 @@
-import { motion, useTransform, useScroll } from "framer-motion";
-import { useRef } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import * as React from "react"
 
-const MainNews = () => {
+import { Card, CardContent } from "@/components/ui/card"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import { FaArrowRight } from "react-icons/fa6"
+
+const MainNewsMobile = () => {
     return (
-        <div className="hidden pt-12 pb-24 md:flex">
-            <div className='flex flex-col w-full text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope px-[5%]'>
-                <div className='flex flex-wrap pb-2 text-2xl font-bold uppercase border-b-2 text-sky-900 border-stone-200 w-max font-merriwether'>Latest News</div>
-                <HorizontalScrollCarousel />
-
-            </div>
-        </div>
-    );
-};
-
-const HorizontalScrollCarousel = () => {
-    const targetRef = useRef(null);
-    const { scrollYProgress } = useScroll({
-        target: targetRef,
-    });
-
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
-
-    return (
-        <section ref={targetRef} className="relative h-[300vh] ">
-            <div className="sticky top-0 flex items-center h-screen overflow-hidden">
-                <motion.div style={{ x }} className="flex gap-4">
-                    {cards.map((card) => {
-                        return <Card card={card} key={card.id} />;
-                    })}
-                </motion.div>
-            </div>
-        </section>
-    );
-};
-
-const Card = ({ card }) => {
-    return (
-        <div
-            key={card.id}
-            className="flex duration-1000 group relative h-[450px] w-[450px] overflow-hidden bg-white shadow-lg border-r-2 border-b-2 border-sky-900 rounded-lg"
-        >
-            <div
-                style={{
-                    backgroundImage: `url(${card.url})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center center",
+        <div className="flex items-center justify-center w-full h-max py-24 md:hidden px-[5%] flex-col">
+            <div className='flex flex-wrap pb-2 mb-8 text-2xl font-bold uppercase border-b-2 text-sky-900 border-stone-200 w-max font-merriwether'>Latest News</div>
+            <Carousel
+                opts={{
+                    align: "start",
                 }}
-                className="absolute inset-0 z-0 transition-transform duration-500 brightness-50 saturate-0 group-hover:scale-110 group-hover:saturate-100"
-            ></div>
-            <a href="#" className="absolute z-10 flex flex-col w-full h-full group-hover:bg-gradient-to-br from-white/20 to-white/0 group-hover:backdrop-blur-sm">
-                <div className="flex justify-between w-full pr-8">
-                    <p className="flex p-8 text-2xl font-black text-white uppercase font-merriwether">
-                        {card.title}
-                    </p>
-                    <div className="flex items-center justify-center text-xl text-white duration-300 group-hover:rotate-[-45deg]">
-                        <FaArrowRight />
-                    </div>
-                </div>
-                <p className=" line-clamp-5 px-8 text-lg/[250%] tracking-tight text-white md:opacity-0 group-hover:opacity-100 duration-300 font-manrope ">
-                    {card.subtitle}
-                </p>
-                <div className="flex w-full px-8 duration-300 md:opacity-0 group-hover:opacity-100 font-manrope"><button className="px-4 py-1 mt-12 text-white duration-300 bg-orange-500 border-2 border-transparent rounded-xl hover:bg-orange-400 ">Read More</button></div>
-            </a>
+                className="w-full"
+            >
+                <CarouselContent>
+                    {cards.map((card) => (
+                        <CarouselItem key={card.id} className='pl-8 overflow-hidden basis-[90%]'>
+                            <div style={{
+                                backgroundImage: `url(${card.url})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center center",
+                            }} className='z-0 duration-300 aspect-square rounded-xl brightness-50 saturate-0 hover:saturate-100 hover:brightness-75'>
+                            </div>
+                        </CarouselItem>
+                    ))}
+                </CarouselContent>
+                <CarouselPrevious className='top-[50%] translate-y-[-50%]' />
+                <CarouselNext className='top-[50%] translate-y-[-50%]' />
+            </Carousel>
         </div>
-    );
-};
+    )
+}
 
-export default MainNews;
+export default MainNewsMobile
 
 const cards = [
     {
