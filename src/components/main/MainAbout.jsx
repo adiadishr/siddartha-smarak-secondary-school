@@ -45,7 +45,6 @@ const MainAbout = () => {
                         </div>
                         <div className='absolute px-[15%] py-4 text-white bg-sky-900 rounded-lg -bottom-5 font-manrope group-hover:bg-white group-hover:text-sky-900 group-hover:font-bold duration-300 border-2 border-sky-900'>Our Objective</div>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -13,13 +13,13 @@ const AboutHero = () => {
                     <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>About Us</div>
                     <div className='flex flex-col w-full gap-12 md:flex-row'>
                         <div className='flex flex-col w-full gap-4 md:w-1/2'>
-                            <div className='text-2xl/[110%] text-stone-700 font-merriwether pt-4'>An Introduction</div>
-                            <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-4'>
+                            <div className='text-2xl/[110%] text-stone-700 font-merriwether pt-4 flex'>An Introduction</div>
+                            <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-4 flex'>
                                 Nestled in the heart of Kapilvastu, our Siddhartha Smarak Secondary School Stands as a beacon of academic excellence and holistic development, catering to the educational needs of over 200+ students annually. With a rich legacy spanning decades, our institution boasts a dynamic learning environment where students thrive academically, socially, and emotionally.
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center w-full gap-4 overflow-hidden md:w-1/2'>
-                            <img src="https://source.unsplash.com/random/?school" className='flex rounded-3xl' alt="" />
+                        <div className='flex flex-col items-center flex-shrink w-full overflow-hidden md:w-1/2'>
+                            <img src="https://source.unsplash.com/random/?school" className='object-cover object-center rounded-3xl' alt="" />
                         </div>
                     </div>
                     <div className='relative flex flex-col w-full gap-12 md:flex-row'>

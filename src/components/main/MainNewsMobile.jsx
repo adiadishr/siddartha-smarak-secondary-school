@@ -22,18 +22,36 @@ const MainNewsMobile = () => {
             >
                 <CarouselContent>
                     {cards.map((card) => (
-                        <CarouselItem key={card.id} className='pl-8 overflow-hidden basis-[90%]'>
+                        <CarouselItem key={card.id} className='pl-8 overflow-hidden basis-[90%] z-10 relative w-full h-full group'>
                             <div style={{
                                 backgroundImage: `url(${card.url})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center center",
-                            }} className='z-0 duration-300 aspect-square rounded-xl brightness-50 saturate-0 hover:saturate-100 hover:brightness-75'>
+                            }} className='relative z-0 duration-300 aspect-square rounded-xl brightness-[.2] saturate-0 group-hover:saturate-100 group-hover:brightness-50'>
+                            </div>
+                            <div className="absolute top-0 flex flex-col w-full h-full py-[2.5%] pr-[5%] rounded-xl">
+                                <div className="flex flex-col justify-between h-full">
+                                    <div>
+                                        <div className="flex justify-between w-full pr-8">
+                                            <p className="flex p-8 text-2xl font-black text-white uppercase font-merriwether">
+                                                {card.title}
+                                            </p>
+                                            <div className="flex items-center justify-center text-xl text-white duration-300 group-hover:rotate-[-45deg]">
+                                                <FaArrowRight />
+                                            </div>
+                                        </div>
+                                        <p className=" line-clamp-4 px-8 text-lg/[250%] tracking-tight text-white md:opacity-0 group-hover:opacity-100 duration-300 font-manrope ">
+                                            {card.subtitle}
+                                        </p>
+                                    </div>
+                                    <div className="flex pl-[7.5%] text-white font-manrope pb-[10%] pr-[7.5%] w-full"><button className="w-full px-4 py-2 duration-75 bg-orange-500 active:ring-4 ring-orange-200 rounded-xl active:scale-90">Read More</button></div>
+                                </div>
                             </div>
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious className='top-[50%] translate-y-[-50%]' />
-                <CarouselNext className='top-[50%] translate-y-[-50%]' />
+                <CarouselPrevious className='top-[50%] translate-y-[-50%] -translate-x-8' />
+                <CarouselNext className='top-[50%] translate-y-[-50%] translate-x-8' />
             </Carousel>
         </div>
     )

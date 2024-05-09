@@ -6,7 +6,7 @@ import photo4 from '../../assets/1.jpg'
 
 const MainGallery = () => {
     return (
-        <div className='flex pb-48 md:pb-36 px-[5%] w-full items-center justify-center'>
+        <div className='flex pb-24 md:pb-36 px-[5%] w-full items-center justify-center'>
             <div className='flex flex-col w-full gap-16 md:flex-row'>
                 <div className='flex flex-col gap-4 md:w-1/2'>
                     <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>Focus on Holistic Growth</div>

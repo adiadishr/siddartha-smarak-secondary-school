@@ -40,7 +40,7 @@ const Navbar = () => {
                     <div className='flex items-center justify-center gap-8'>
                         <Link onClick={routeTo} to='/'><li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li></Link>
                         <Link onClick={routeTo} to='/About'><NavLink title='About' /></Link>
-                        <li className='duration-300 cursor-pointer hover:text-orange-500'>Academics</li>
+                        <Link onClick={routeTo} to='/Academics'>Academics</Link>
                         <NavLink title='News & Events' />
                         <NavLink title='Blog' />
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>

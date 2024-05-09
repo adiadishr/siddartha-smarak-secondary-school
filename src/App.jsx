@@ -10,6 +10,7 @@ import Main from './pages/Main'
 import Books from './pages/Books'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Academics from "./pages/Academics";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from "./components/global/Footer";
@@ -28,6 +29,7 @@ const App = () => {
           <Route exact path='/About' component={About} />
           <Route exact path='/Books' component={Books} />
           <Route exact path='/Contact' component={Contact} />
+          <Route exact path='/Academics' component={Academics} />
         </Switch>
         <Footer />
       </Router>
