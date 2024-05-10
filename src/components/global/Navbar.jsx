@@ -177,7 +177,7 @@ const Navbar = () => {
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Contact'>Contact</Link></li>
                         </ul>
                         <div className='mt-12'>
-                            <AdmissionDrawer  />
+                            <AdmissionDrawer place='mobileNav' />
                         </div>
                     </div>
                 </div>
