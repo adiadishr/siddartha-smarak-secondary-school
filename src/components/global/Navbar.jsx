@@ -15,6 +15,13 @@ const Navbar = () => {
         });
     };
 
+    const routeToNav = () => {
+        window.scrollTo({
+            top:0
+        })
+        setNav(!nav);
+    }
+
     useEffect(() => {
         if (nav) {
             document.body.style.overflow = 'hidden';
@@ -99,9 +106,9 @@ const Navbar = () => {
             </div>
             {nav
                 ?
-                <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 flex flex-col h-screen bg-white/10 backdrop-blur-xl'>
-                    <div style={{ top: topPos ? 0 : 40 }} className='w-full fixed px-[7.5%] justify-end items-center py-3'>
-                        <ul className='flex flex-row items-center justify-end w-full gap-16 tracking-tight lg:hidden font-merriwether mt-[6px]'>
+                <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 flex flex-col h-screen bg-black/35 backdrop-blur-xl'>
+                    <div style={{ top: topPos ? 0 : 40 }} className='w-full flex flex-col gap-8 fixed px-[7.5%] justify-end items-center py-3'>
+                        <ul className='flex flex-row items-center justify-end w-full mt-[6px]'>
                             <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
                                 <motion.button
                                     onClick={toggleNav}
@@ -147,6 +154,15 @@ const Navbar = () => {
                                         className='absolute h-[1px] w-6 bg-black' />
                                 </motion.button>
                             </li>
+                        </ul>
+                        <ul className='flex flex-col w-full gap-2 tracking-tight text-xl divide-y-[1px] divide-stone-50/10 font-merriwether'>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/'>Home</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/About'>About</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/Academics'>Academics</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/'>News & Events</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/'>Blog</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/Books'>किताब</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-400'><Link onClick={routeToNav} to='/Contact'>Contact</Link></li>
                         </ul>
                     </div>
                 </div>
