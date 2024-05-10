@@ -6,7 +6,7 @@ import AdmissionDrawer from '../global/AdmissionDrawer'
 
 const ContactHero = () => {
     return (
-        <div className='pt-12 mt-[114px] px-[5%]'>
+        <div className='pt-12 mt-[130px] px-[5%]'>
             <div className="pb-28">
                 <h2 className="w-full pb-2 text-2xl font-bold text-center uppercase border-b-2 md:text-start md:w-max text-sky-900 border-stone-200 font-merriwether">Siddartha Smarak Secondary School</h2>
                 <p className="text-lg/[250%] text-stone-400 text-center tracking-wide md:text-left font-manrope md:mb-4 mb-12 ">Kapilvastu, Chitwan, Nepal</p>

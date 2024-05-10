@@ -66,7 +66,8 @@ const Navbar = () => {
                     </div>
                     <AdmissionDrawer />
                 </ul>
-                <ul className='flex flex-row items-center justify-end w-full gap-8 mt-[6px] tracking-tight lg:hidden font-merriwether'>
+                <ul className='flex flex-row items-center justify-between w-full gap-8 mt-[6px] tracking-tight lg:hidden font-merriwether'>
+                    <img className='flex h-[58px] cursor-pointer ' src={logo} onClick={routeToLogo} alt="Logo of Siddartha Smarak Secondary School" />
                     <li className='z-50 duration-300 cursor-pointer hover:text-orange-500'>
 
                         <motion.button
@@ -118,7 +119,7 @@ const Navbar = () => {
             {nav
                 ?
                 <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 flex flex-col h-screen bg-black/35 backdrop-blur-xl'>
-                    <div style={{ top: topPos ? 0 : 40 }} className='w-full flex flex-col gap-8 fixed px-[7.5%] justify-end items-center py-3'>
+                    <div style={{ top: topPos ? 0 : 40 }} className='w-full flex flex-col gap-8 fixed px-[7.5%] justify-end items-center py-5'>
                         <ul className='flex flex-row items-center justify-end w-full mt-[6px]'>
                             <li className='z-50 duration-300 cursor-pointer'>
                                 <motion.button

@@ -11,17 +11,17 @@ const MainCarousel = () => {
         <Carousel
             orientation="horizontal"
             opts={{ loop: true }}
-            className="relative h-[calc(100vh-114px)] mt-[114px]"
+            className="relative h-[calc(100vh-130px)] mt-[130px]"
         >
             <CarouselContent>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
+                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
                 </CarouselItem>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
+                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
                 </CarouselItem>
                 <CarouselItem>
-                    <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-[calc(100vh-114px)] brightness-50" />
+                    <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
                 </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="border-transparent bg-white/25 size-12" />
