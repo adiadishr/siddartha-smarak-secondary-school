@@ -119,7 +119,7 @@ const Navbar = () => {
             {nav
                 ?
                 <div data-aos='fade' className='fixed inset-0 top-0 left-0 z-30 flex flex-col h-screen bg-black/35 backdrop-blur-xl'>
-                    <div style={{ top: topPos ? 0 : 40 }} className='w-full flex flex-col gap-8 fixed px-[7.5%] justify-end items-center py-5'>
+                    <div className='w-full flex flex-col gap-8 fixed px-[7.5%] justify-end items-center py-5'>
                         <ul className='flex flex-row items-center justify-end w-full mt-[6px]'>
                             <li className='z-50 duration-300 cursor-pointer'>
                                 <motion.button
