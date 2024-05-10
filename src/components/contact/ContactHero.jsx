@@ -55,10 +55,12 @@ const ContactHero = () => {
                         <Mail className='mr-4 size-8' />
                         <span>contact@antarikshya.edu</span>
                     </div>
-                    <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
-                        <Phone className='mr-4 size-8' />
-                        <span>+977-1-4780000</span>
-                    </div>
+                    <a href="tel:9843011770">
+                        <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
+                            <Phone className='mr-4 size-8' />
+                            <span>+977-1-4780000</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>

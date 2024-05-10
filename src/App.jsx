@@ -14,6 +14,7 @@ import Academics from "./pages/Academics";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from "./components/global/Footer";
+import News from "./pages/News";
 AOS.init();
 
 const App = () => {
@@ -27,9 +28,10 @@ const App = () => {
         <Switch>
           <Route exact path='/' component={Main} />
           <Route exact path='/About' component={About} />
+          <Route exact path='/Academics' component={Academics} />
+          <Route exact path='/News' component={News} />
           <Route exact path='/Books' component={Books} />
           <Route exact path='/Contact' component={Contact} />
-          <Route exact path='/Academics' component={Academics} />
         </Switch>
         <Footer />
       </Router>

@@ -4,7 +4,7 @@ const AcademicsHero = () => {
 
     return (
         <div className='flex flex-col w-full min-h-screen pb-24 pt-12 mt-[130px] px-[5%]'>
-            <div className='w-full pb-2 mb-8 text-2xl font-bold text-center uppercase border-b-2 md:text-start md:w-max text-sky-900 border-stone-200 font-merriwether'>Academics</div>
+            <h5 className='mb-8 heading'>Academics</h5>
             <Tabs defaultValue="primary" className="relative flex flex-col w-full md:flex-row">
                 <TabsList className='flex flex-wrap items-start w-min p-0 text-left md:w-[20%] sticky md:flex-col h-max top-36 bg-transparent font-merriwether text-black z-20'>
                     <TabsTrigger onClick={() => window.scrollTo({ top: 10, behavior: 'smooth' })} className='data-[state=active]:hover:bg-sky-800/90 justify-start w-full text-start hover:bg-sky-800/90 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-white' value="primary">Primary Program</TabsTrigger>

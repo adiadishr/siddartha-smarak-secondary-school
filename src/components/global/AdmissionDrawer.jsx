@@ -23,7 +23,7 @@ const AdmissionDrawer = ({ place }) => {
                 <DrawerTrigger id='admissionButton' className='flex items-center justify-center px-4 py-[2px] text-white duration-300 border-2 border-transparent bg-sky-800/80 hover:bg-sky-800/60 rounded-xl'><PhoneCallIcon className="mr-3 size-4" />Contact</DrawerTrigger> :
                 place === 'mobileNav' ?
                     <DrawerTrigger id='admissionButton' className='flex justify-end pt-4 duration-300 hover:text-white text-stone-200'>
-                        <div className="flex px-4 py-2 duration-300 bg-sky-800/80 rounded-xl w-max h-max hover:ring-2 ring-sky-400/50">
+                        <div className="flex px-4 py-2 duration-300 bg-sky-700/80 hover:bg-sky-500/50 rounded-xl w-max h-max active:ring-2 ring-sky-400/50">
                             <PiStudentFill className="mr-2 size-6" />Admission
                         </div>
                     </DrawerTrigger> :

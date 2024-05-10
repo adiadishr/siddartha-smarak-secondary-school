@@ -100,8 +100,8 @@ const AboutFaculty = () => {
             <div className='w-full px-[5%] flex relative' >
                 <div ref={staffSectionRef} className='absolute top-[-7.5rem]' id='staff' />
                 <div className='flex flex-col w-full'>
-                    <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>Members of our faculty & staff
-                    </div>
+                    <h5 className='heading'>Members of our faculty & staff
+                    </h5>
                     <div className='flex flex-wrap justify-between w-full gap-8 mt-8'>
                         {staffs.map((staff) => {
                             return <Staff staff={staff} key={staff.id} />;

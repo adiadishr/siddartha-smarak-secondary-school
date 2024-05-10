@@ -58,8 +58,8 @@ const Navbar = () => {
                         <img className='flex h-16 cursor-pointer ' src={logo} onClick={routeToLogo} alt="Logo of Siddartha Smarak Secondary School" />
                         <Link onClick={routeTo} to='/'><li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li></Link>
                         <Link onClick={routeTo} to='/About'><NavLink title='About' /></Link>
-                        <Link onClick={routeTo} to='/Academics'>Academics</Link>
-                        <NavLink title='News & Events' />
+                        <Link onClick={routeTo} to='/Academics' className='duration-300 cursor-pointer hover:text-orange-500'>Academics</Link>
+                        <Link onClick={routeTo} to='/News'><NavLink title='News & Events' /></Link>
                         <NavLink title='Blog' />
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>
                         <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Contact</Link>
@@ -171,7 +171,7 @@ const Navbar = () => {
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/'>Home</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/About'>About</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Academics'>Academics</Link></li>
-                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/'>News & Events</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/News'>News & Events</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/'>Blog</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Books'>किताब</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Contact'>Contact</Link></li>
