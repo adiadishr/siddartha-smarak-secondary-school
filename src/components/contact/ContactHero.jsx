@@ -1,6 +1,5 @@
 import { LocateIcon, Mail, Phone } from 'lucide-react'
 import React from 'react'
-import { FaLocationPin } from 'react-icons/fa6'
 import { ImQuotesLeft } from 'react-icons/im'
 import AdmissionDrawer from '../global/AdmissionDrawer'
 
@@ -26,7 +25,7 @@ const ContactHero = () => {
                         </div>
                     </div>
                     <div className='flex flex-col order-1 gap-12 md:w-1/2 md:order-2'>
-                        <div className='flex flex-col'>
+                        <div className='flex flex-col py-12 md:py-0'>
                             <div className='flex flex-col items-center justify-center w-full gap-12'>
                                 <div className='text-4xl text-orange-500'>
                                     <ImQuotesLeft />
