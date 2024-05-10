@@ -97,7 +97,7 @@ const AboutFaculty = () => {
 
     return (
         <>
-            <div className='w-full pb-28 px-[5%] flex relative' >
+            <div className='w-full px-[5%] flex relative' >
                 <div ref={staffSectionRef} className='absolute top-[-7.5rem]' id='staff' />
                 <div className='flex flex-col w-full'>
                     <div className='w-full pb-2 text-2xl font-bold uppercase border-b-2 md:w-max text-sky-900 border-stone-200 font-merriwether'>Members of our faculty & staff
