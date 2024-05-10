@@ -4,8 +4,11 @@ import { TopScroll } from '../utilities/TopScroll';
 import NavLink from '@/components/global/Flyoutlink';
 import { Link } from "react-router-dom"
 import AdmissionDrawer from './AdmissionDrawer';
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
+
+    var origin
 
     const [nav, setNav] = useState(false);
 
@@ -20,6 +23,13 @@ const Navbar = () => {
             top: 0
         })
         setNav(!nav);
+    }
+
+    const routeToLogo = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
     }
 
     useEffect(() => {
@@ -45,6 +55,7 @@ const Navbar = () => {
             <div style={{ top: topPos ? 0 : 40 }} className='z-30 duration-300 w-full border-b-2 fixed lg:flex px-[7.5%] bg-white lg:justify-center justify-end items-center py-3 min-h-[74px]'>
                 <ul className='flex-row items-center justify-between hidden w-full tracking-tight lg:flex font-merriwether'>
                     <div className='flex items-center justify-center gap-8'>
+                        <img className='flex h-16 cursor-pointer ' src={logo} onClick={routeToLogo} alt="Logo of Siddartha Smarak Secondary School" />
                         <Link onClick={routeTo} to='/'><li className='duration-300 cursor-pointer hover:text-orange-500'>Home</li></Link>
                         <Link onClick={routeTo} to='/About'><NavLink title='About' /></Link>
                         <Link onClick={routeTo} to='/Academics'>Academics</Link>
