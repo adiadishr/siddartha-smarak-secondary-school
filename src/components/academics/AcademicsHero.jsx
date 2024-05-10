@@ -6,10 +6,10 @@ const AcademicsHero = () => {
         <div className='flex flex-col w-full min-h-screen pb-24 pt-12 mt-[114px] px-[7.5%]'>
             <div className='w-full pb-2 mb-8 text-2xl font-bold text-center uppercase border-b-2 md:text-start md:w-max text-sky-900 border-stone-200 font-merriwether'>Academics</div>
             <Tabs defaultValue="primary" className="relative flex flex-col w-full md:flex-row">
-                <TabsList className='flex items-start w-full p-0 text-left md:w-[20%] sticky md:flex-col h-max top-36 bg-transparent font-merriwether text-black'>
-                    <TabsTrigger className='data-[state=active]:hover:bg-sky-800/90 justify-start w-full text-start hover:bg-sky-800/80 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-transparent' value="primary">Primary Program</TabsTrigger>
-                    <TabsTrigger className='data-[state=active]:hover:bg-sky-800/90 justify-start w-full text-start hover:bg-sky-800/80 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-stone-50' value="secondary">Secondary Program</TabsTrigger>
-                    <TabsTrigger className='justify-start w-full text-start data-[state=active]:hover:bg-sky-800/90 hover:bg-sky-800/80 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-stone-50' value="higher-secondary">Higher Secondary</TabsTrigger>
+                <TabsList className='flex items-start w-full p-0 text-left md:w-[20%] sticky md:flex-col h-max top-36 bg-transparent font-merriwether text-black z-20'>
+                    <TabsTrigger onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='data-[state=active]:hover:bg-sky-800/90 justify-start w-full text-start hover:bg-sky-800/90 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-white' value="primary">Primary Program</TabsTrigger>
+                    <TabsTrigger onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='data-[state=active]:hover:bg-sky-800/90 justify-start w-full text-start hover:bg-sky-800/90 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-white' value="secondary">Secondary Program</TabsTrigger>
+                    <TabsTrigger onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='justify-start w-full text-start data-[state=active]:hover:bg-sky-800/90 hover:bg-sky-800/90 hover:text-white data-[state=active]:text-white data-[state=active]:bg-sky-800 px-4 py-4 bg-white' value="higher-secondary">Higher Secondary</TabsTrigger>
                 </TabsList>
                 <div className='relative w-full pt-12 md:pl-24 md:pt-0 text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope'>
                     <TabsContent className='flex flex-col gap-4 mt-0' value="primary">
