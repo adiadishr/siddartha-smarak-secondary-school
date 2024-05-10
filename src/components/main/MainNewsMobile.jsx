@@ -27,7 +27,7 @@ const MainNewsMobile = () => {
                                 backgroundImage: `url(${card.url})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center center",
-                            }} className='relative z-0 h-[70vh] duration-300 rounded-xl brightness-[.2] saturate-0 group-hover:saturate-100 group-hover:brightness-50'>
+                            }} className='relative z-0 h-[50vh] sm:h-[70vh] duration-300 rounded-xl brightness-[.2] saturate-0 group-hover:saturate-100 group-hover:brightness-50'>
                             </div>
                             <div className="absolute top-0 flex flex-col w-full h-full py-[2.5%] pr-[5%] rounded-xl">
                                 <div className="flex flex-col justify-between h-full">
