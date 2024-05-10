@@ -28,7 +28,7 @@ const AdmissionDrawer = ({ place }) => {
                         </div>
                     </DrawerTrigger> :
                     <DrawerTrigger id='admissionButton' className='px-4 py-[10px] text-white bg-orange-500 border-2 border-transparent rounded-xl hover:opacity-80 duration-300 flex items-center justify-center'><PiStudentFill className="mr-2 size-6" />Admissions</DrawerTrigger>
-            }
+            } 
             <DrawerContent className='md:px-[5%] max-h-[90vh] overflow-y-scroll'>
                 <DrawerHeader>
                     <DrawerTitle className='text-2xl/[110%] text-sky-800 font-merriwether'>Interested in building your future with us?</DrawerTitle>
