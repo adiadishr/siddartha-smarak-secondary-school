@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
             </div>
             {/* Footer */}
-            <div className='w-full py-24 h-max px-[7.5%]'>
+            <div className='w-full pt-24 h-max px-[7.5%]'>
                 <div className='flex flex-col justify-between w-full gap-24 md:gap-12 md:flex-row'>
                     <div className='flex gap-24'>
                         <div className='flex flex-col gap-2 tracking-tight'>
@@ -50,6 +50,10 @@ const Footer = () => {
                         ></iframe>
                     </div>
                 </div>
+            </div>
+            <div className='w-full pt-12 pb-8 h-max px-[7.5%]'>
+                <p className='text-sm text-neutral-400 font-merriwether '>©Siddartha Smarak Secondary School, 2024 All rights reserved</p>
+                <p className='text-sm text-neutral-700 font-manrope'>Developed and Maintained by <a href="https://www.project0rbit.com" target='_blank' className='hover:underline hover:text-black'>Antarikshya</a> </p>
             </div>
         </div>
     )
