@@ -71,9 +71,6 @@ const AdmissionDrawer = ({ place }) => {
                                 <input className="w-full px-2 py-2 border-2 font-manrope text-neutral-700" placeholder="Enter your phone number" type="text" />
                             </div>
                         </div>
-                        <textarea rows={5} placeholder="Any other details?" className="w-full px-2 py-2 mt-2 border-2 font-manrope">
-
-                        </textarea>
                     </section>
                     <DrawerFooter className='px-0 mx-0'>
                         <input type="submit" className='py-2 font-semibold text-white rounded-md cursor-pointer bg-sky-800/80 hover:bg-sky-800/60' />
