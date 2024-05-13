@@ -29,13 +29,13 @@ const AdmissionDrawer = ({ place }) => {
                     </DrawerTrigger> :
                     <DrawerTrigger id='admissionButton' className='px-4 py-[10px] text-white bg-orange-500 border-2 border-transparent rounded-xl hover:opacity-80 duration-300 flex items-center justify-center'><PiStudentFill className="mr-2 size-6" />Admissions</DrawerTrigger>
             }
-            <DrawerContent className='px-[5%] h-screen overflow-y-hidden'>
+            <DrawerContent className='px-[5%] h-[90vh] '>
                 <DrawerHeader className='px-0 mx-0'>
                     <DrawerTitle className='text-2xl/[110%] text-sky-800 font-merriwether'>Interested in building your future with us?</DrawerTitle>
                     <DrawerDescription className='text-base font-manrope text-stone-400'>Fill up this form, and we'll contact you ASAP regarding admission and joining us!</DrawerDescription>
                 </DrawerHeader>
+                <hr />
                 <form className="flex flex-col justify-between h-full">
-                    <hr />
                     <section className="flex flex-col gap-4 mt-4">
                         <div className="flex flex-col justify-between gap-4 md:gap-8 md:flex-row">
                             <div className="flex flex-col w-full">
@@ -64,6 +64,8 @@ const AdmissionDrawer = ({ place }) => {
                                     <option value="Class 8">Class 8</option>
                                     <option value="Class 9">Class 9</option>
                                     <option value="Class 10">Class 10</option>
+                                    <option value="Class 10">Class 11</option>
+                                    <option value="Class 10">Class 12</option>
                                 </select>
                             </div>
                             <div className="flex flex-col w-full">
@@ -72,13 +74,14 @@ const AdmissionDrawer = ({ place }) => {
                             </div>
                         </div>
                     </section>
-                    <DrawerFooter className='px-0 mx-0'>
-                        <input type="submit" className='py-2 font-semibold text-white rounded-md cursor-pointer bg-sky-800/80 hover:bg-sky-800/60' />
-                        <DrawerClose className="flex items-center ">
-                            <Button className="w-full" variant="outline">Cancel</Button>
-                        </DrawerClose>
-                    </DrawerFooter>
+                    <input type="submit" className='py-2 font-semibold text-white rounded-md cursor-pointer bg-sky-800/80 hover:bg-sky-800/60' />
                 </form>
+                <DrawerFooter className='px-0 mx-0'>
+                    <DrawerClose className="flex items-center ">
+                        <Button className="w-full" variant="outline">Cancel</Button>
+                    </DrawerClose>
+                </DrawerFooter>
+
             </DrawerContent>
         </Drawer>
     )
