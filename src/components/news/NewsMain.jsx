@@ -8,10 +8,14 @@ import {
 } from "@/components/ui/carousel"
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6"
+import photo1 from '../../assets/parentsDay.jpg'
+import photo2 from '../../assets/prizeDistributions.jpg'
+import photo3 from '../../assets/runningShieldCompetition.jpg'
+import photo4 from '../../assets/sportsDay.jpg'
 
 const NewsMain = () => {
     return (
-        <div className="w-full px-[5%] pt-12 pb-24">
+        <div className="w-full px-[5%] pb-24">
             <h5 className='mb-8 heading'>Latest News</h5>
             <Carousel
                 opts={{
@@ -26,13 +30,13 @@ const NewsMain = () => {
                                 backgroundImage: `url(${card.url})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center center",
-                            }} className='relative z-0 aspect-square duration-300 rounded-xl md:brightness-[.2] brightness-[.35]  group-hover:brightness-50'>
+                            }} className='relative z-0 aspect-square duration-300 rounded-xl brightness-[.4]  group-hover:brightness-50'>
                             </div>
                             <div className="absolute top-0 flex flex-col w-full h-full py-[2.5%] pr-[5%]">
                                 <a href="#" className="flex flex-col justify-between h-full">
                                     <div>
                                         <div className="flex justify-between w-full pr-8">
-                                            <p className="flex p-8 pb-4 text-2xl font-black text-white uppercase font-merriwether">
+                                            <p className="p-8 pb-0 mb-8 text-lg md:text-2xl font-black text-white uppercase font-merriwether line-clamp-1">
                                                 {card.title}
                                             </p>
                                             <div className="flex items-center justify-center text-xl text-white duration-300 group-hover:rotate-[-45deg]">
@@ -59,25 +63,25 @@ export default NewsMain
 
 const cards = [
     {
-        url: "https://source.unsplash.com/random/?sports_children",
+        url: photo4,
         title: "Sports Day",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 1,
     },
     {
-        url: "https://source.unsplash.com/random/?kids_theatre",
+        url: photo1,
         title: "Annual Day",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 2,
     },
     {
-        url: "https://source.unsplash.com/random/?report_card",
+        url: photo3,
         title: "Results Out",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 3,
     },
     {
-        url: "https://source.unsplash.com/random/?education",
+        url: photo2,
         title: "Voted Best School",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 4,

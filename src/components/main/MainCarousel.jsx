@@ -5,6 +5,10 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import photo1 from '../../assets/parentsDay.jpg'
+import photo2 from '../../assets/prizeDistributions.jpg'
+import photo3 from '../../assets/runningShieldCompetition.jpg'
+import photo4 from '../../assets/sportsDay.jpg'
 
 const MainCarousel = () => {
     return (
@@ -14,14 +18,26 @@ const MainCarousel = () => {
             className="relative h-[calc(100vh-130px)] mt-[130px]"
         >
             <CarouselContent>
-                <CarouselItem>
-                    <img src="https://source.unsplash.com/random/school" alt="Slide 1" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
+                <CarouselItem className='relative'>
+                    <img src={photo1} alt="Slide 1" className="object-cover w-full h-[calc(100vh-130px)] brightness-50 z-0s" />
+                    <div className="absolute z-20 top-0 w-full h-full items-center justify-center flex px-[5%] ">
+                        <p className="text-white text-4xl md:text-6xl/snug font-merriwether font-semibold tracking-wide text-center">Welcome to Siddartha Smarak Secondary School</p>
+                    </div>
+                    <div className="top-0 left-0 inset-0 absolute w-full h-[calc(100vh-130px)] z-10 bg-gradient-to-t from-sky-900/75" />
                 </CarouselItem>
-                <CarouselItem>
-                    <img src="https://source.unsplash.com/random/university" alt="Slide 2" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
+                <CarouselItem className='relative'>
+                    <img src={photo4} alt="Slide 2" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
+                    <div className="absolute z-20 top-0 w-full h-full items-center justify-center flex px-[5%] ">
+                        <p className="text-white text-4xl md:text-6xl/snug font-merriwether font-semibold tracking-wide text-center">Welcome to Siddartha Smarak Secondary School</p>
+                    </div>
+                    <div className="top-0 left-0 inset-0 absolute w-full h-[calc(100vh-130px)] z-10 bg-gradient-to-t from-orange-/40" />
                 </CarouselItem>
-                <CarouselItem>
-                    <img src="https://source.unsplash.com/random/playground" alt="Slide 3" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
+                <CarouselItem className='relative'>
+                    <img src={photo3} alt="Slide 3" className="object-cover w-full h-[calc(100vh-130px)] brightness-50" />
+                    <div className="absolute top-0 w-full h-full items-center justify-center flex px-[5%] z-20">
+                        <p className="text-white text-4xl md:text-6xl/snug font-merriwether font-semibold tracking-wide text-center">Welcome to Siddartha Smarak Secondary School</p>
+                    </div>
+                    <div className="top-0 left-0 inset-0 absolute w-full h-[calc(100vh-130px)] z-10 bg-gradient-to-t from-sky-900/75" />
                 </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="border-transparent bg-white/25 size-12" />

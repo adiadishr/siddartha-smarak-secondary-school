@@ -5,6 +5,7 @@ import MainHero from '@/components/main/MainHero'
 import MainNews from '@/components/main/MainNews'
 import MainNewsMobile from '@/components/main/MainNewsMobile'
 import MainQuote from '@/components/main/MainQuote'
+import NewsMain from '@/components/news/NewsMain'
 import React from 'react'
 
 const Main = () => {
@@ -16,8 +17,7 @@ const Main = () => {
             <MainHero />
             <MainAbout />
             <MainGallery />
-            <MainNews /> 
-            <MainNewsMobile />
+            <NewsMain />
         </>
     )
 }
