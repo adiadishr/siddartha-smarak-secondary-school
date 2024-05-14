@@ -63,7 +63,7 @@ const Navbar = () => {
                         <Link onClick={routeTo} to='/Blog'><NavLink title='Blog' /></Link>
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>
                         <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Contact</Link>
-                        <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Gallery</Link>
+                        <Link onClick={routeTo} to='/Gallery' className='duration-300 cursor-pointer hover:text-orange-500'>Gallery</Link>
                     </div>
                     <AdmissionDrawer />
                 </ul>
@@ -176,6 +176,7 @@ const Navbar = () => {
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Blog'>Blog</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Books'>किताब</Link></li>
                             <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Contact'>Contact</Link></li>
+                            <li className='flex justify-end w-full pt-2 duration-300 cursor-pointer text-end text-stone-50 hover:text-stone-600'><Link onClick={routeToNav} to='/Gallery'>Galley</Link></li>
                             <AdmissionDrawer place='mobileNav' />
                         </ul>
                     </div>

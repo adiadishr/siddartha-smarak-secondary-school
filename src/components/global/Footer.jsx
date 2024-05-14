@@ -33,6 +33,8 @@ const Footer = () => {
                             </span>About</Link>
                             <Link to='/Blog' onClick={toTop} className='text-2xl/[110%] group text-stone-700 font-merriwether hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
                             </span>Blogs</Link>
+                            <Link to='/Gallery' onClick={toTop} className='group flex text-2xl/[110%] text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>Gallery</Link>
                         </div>
                         <div className='flex flex-col gap-2 tracking-tight'>
                             <div className='text-2xl/[110%] text-stone-400 font-merriwether pb-2 '>Stay Updated</div>
