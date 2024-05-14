@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useRef } from 'react';
+import UseScrollTo from '../utilities/UseScrollTo';
 
 const fourthRowClassData = [
     {
@@ -33,11 +33,15 @@ const fourthRowClassData = [
 ];
 
 const BooksFourthRow = () => {
+
+    const classRef = useRef(null);
+    UseScrollTo('classseven');
+
     return (
         <div className='flex flex-col justify-between w-full gap-16 md:flex-row'>
+            <div ref={classRef} className='absolute top-[-7.5rem]' id='classseven' />
             {fourthRowClassData.map((classItem, index) => (
-
-                <div key={index} id='class7&8' className='flex flex-col w-full gap-4 p-8 bg-white shadow-md rounded-3xl font-manrope '>
+                <div key={index} className='flex flex-col w-full gap-4 p-8 bg-white shadow-md rounded-3xl font-manrope '>
                     <div className='pb-4 text-xl font-bold border-b-2 font-merriwether'>{classItem.class}</div>
                     {classItem.subjects.map((subject, subIndex) => (
                         <a target='_blank' key={subIndex} href={subject.href} className='font-medium underline cursor-pointer text-sky-700 hover:text-sky-900'>{subIndex + 1}. {subject.title}</a>

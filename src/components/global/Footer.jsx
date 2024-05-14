@@ -1,5 +1,10 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom"
+
+const toTop = () => {
+    window.scrollTo({ top: 0 })
+}
 
 const Footer = () => {
     return (
@@ -22,21 +27,21 @@ const Footer = () => {
                     <div className='flex gap-24'>
                         <div className='flex flex-col gap-2 tracking-tight'>
                             <div className='text-2xl/[110%] text-stone-400 font-merriwether pb-2 '>Quick Links</div>
-                            <div className='group flex text-2xl/[110%] text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>Home</div>
-                            <div className='text-2xl/[110%] text-stone-700 font-merriwether group hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>About</div>
-                            <div className='text-2xl/[110%] group text-stone-700 font-merriwether hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>Blogs</div>
+                            <Link to='/' onClick={toTop} className='group flex text-2xl/[110%] text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>Home</Link>
+                            <Link to='/About' onClick={toTop} className='text-2xl/[110%] text-stone-700 font-merriwether group hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>About</Link>
+                            <Link to='/Blog' onClick={toTop} className='text-2xl/[110%] group text-stone-700 font-merriwether hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>Blogs</Link>
                         </div>
                         <div className='flex flex-col gap-2 tracking-tight'>
                             <div className='text-2xl/[110%] text-stone-400 font-merriwether pb-2 '>Stay Updated</div>
-                            <div className='group flex text-2xl/[110%] text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>News & Notices</div>
-                            <div className='text-2xl/[110%] text-stone-700 font-merriwether group hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>Events</div>
-                            <div className='text-2xl/[110%] group text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
-                            </span>Academics</div>
+                            <Link to='/News' onClick={toTop} className='group flex text-2xl/[110%] text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>News & Notices</Link>
+                            <Link to='/Books' onClick={toTop} className='text-2xl/[110%] text-stone-700 font-merriwether group hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>किताब</Link>
+                            <Link to='/Academics' onClick={toTop} className='text-2xl/[110%] group text-stone-700 font-merriwether  hover:text-orange-500 duration-300 cursor-pointer flex'><span className='flex items-center justify-center -mr-4 text-sm text-orange-400 duration-500 opacity-0 group-hover:mr-2 group-hover:opacity-100 '><FaArrowRight />
+                            </span>Academics</Link>
                         </div>
                     </div>
                     <div className='flex items-center justify-start w-full mb-24 h-max md:mb-0 md:w-max'>

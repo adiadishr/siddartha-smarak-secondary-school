@@ -9,7 +9,7 @@ const MainAbout = () => {
     UseScrollTo('mission');
 
     return (
-        <div className='w-full flex px-[7.5%] pb-48 relative'>
+        <div className='w-full flex px-[7.5%] pb-32 relative'>
             <div ref={missionVisionRef} id='mission' className='absolute top-[-7.5rem]' />
             <div className="flex flex-col w-full gap-24">
                 <div className='flex flex-col items-center w-full gap-2'>

@@ -115,15 +115,6 @@ const NewsAndEventsContent = () => {
                 <a href="#" className="block text-sm hover:underline">
                     Latest Events
                 </a>
-                <h3 href="#" className="block text-sm font-semibold">
-                    Recurring Events
-                </h3>
-                <a href="#" className="block text-sm hover:underline">
-                    Annual Day
-                </a>
-                <a href="#" className="block text-sm hover:underline">
-                    Investiture Ceremony
-                </a>
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
                 Contact sales
@@ -139,28 +130,28 @@ const किताबContent = () => {
                 <Link className="block text-sm font-semibold hover:underline" to='/Books'>
                     किताब
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#classone'>
+                <Link className="block text-sm hover:underline" to='/Books#ClassOne'>
                     कक्षा १
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#classone'>
+                <Link className="block text-sm hover:underline" to='/Books#ClassOne'>
                     कक्षा २
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class3n4'>
+                <Link className="block text-sm hover:underline" to='/Books#ClassThree'>
                     कक्षा ३
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class3n4'>
+                <Link className="block text-sm hover:underline" to='/Books#ClassThree'>
                     कक्षा ४
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class5n6'>
+                <Link className="block text-sm hover:underline" to='/Books#classfive'>
                     कक्षा ५
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class5n6'>
+                <Link className="block text-sm hover:underline" to='/Books#classfive'>
                     कक्षा ६
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class7n8'>
+                <Link className="block text-sm hover:underline" to='/Books#classseven'>
                     कक्षा ७
                 </Link>
-                <Link className="block text-sm hover:underline" to='/Books#class7n8'>
+                <Link className="block text-sm hover:underline" to='/Books#classseven'>
                     कक्षा ८
                 </Link>
                 <Link className="block text-sm hover:underline" to='/Books#classnine'>

@@ -16,7 +16,7 @@ import photo4 from '../../assets/sportsDay.jpg'
 const NewsMain = () => {
     return (
         <div className="w-full px-[5%] pb-24">
-            <h5 className='mb-8 heading'>Latest News</h5>
+            <h5 className='mb-12 heading'>Latest News</h5>
             <Carousel
                 opts={{
                     align: "start",
@@ -36,14 +36,14 @@ const NewsMain = () => {
                                 <a href="#" className="flex flex-col justify-between h-full">
                                     <div>
                                         <div className="flex justify-between w-full pr-8">
-                                            <p className="p-8 pb-0 mb-8 text-lg md:text-2xl font-black text-white uppercase font-merriwether line-clamp-1">
+                                            <p className="p-8 pb-0 mb-8 text-lg font-black text-white uppercase md:text-2xl font-merriwether line-clamp-1">
                                                 {card.title}
                                             </p>
                                             <div className="flex items-center justify-center text-xl text-white duration-300 group-hover:rotate-[-45deg]">
                                                 <FaArrowRight />
                                             </div>
                                         </div>
-                                        <p className=" line-clamp-6 px-8 text-lg/[230%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
+                                        <p className=" line-clamp-4 md:line-clamp-5 lg:line-clamp-6 px-8 text-lg/[230%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
                                             {card.subtitle}
                                         </p>
                                     </div>
@@ -85,23 +85,5 @@ const cards = [
         title: "Voted Best School",
         subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
         id: 4,
-    },
-    {
-        url: "https://source.unsplash.com/random/?teacher",
-        title: "Teacher's Day",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
-        id: 5,
-    },
-    {
-        url: "https://source.unsplash.com/random/?children",
-        title: "Children's Day",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
-        id: 6,
-    },
-    {
-        url: "https://source.unsplash.com/random/?poetry",
-        title: "Student Poem",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
-        id: 7,
     },
 ];

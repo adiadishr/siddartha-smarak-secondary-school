@@ -7,9 +7,11 @@ const routeTo = () => {
 
 const CallToAction = () => {
     return (
-        <Link onClick={routeTo} to='/Contact' className="w-full rounded-2xl bg-gradient-to-r from-orange-400/90 to-orange-700/90 text-white px-[5%] py-8 backdrop-blur-3xl flex items-center justify-center duration-300 hover:translate-y-[-1.5rem] cursor-pointer">
-            <p className="uppercase font-merriwether tracking-wide text-lg md:text-2xl font-semibold">Join us at Siddartha Smarak</p>
-        </Link>
+        <div className="flex justify-center w-full">
+            <Link onClick={routeTo} to='/Contact' className="w-1/2 rounded-2xl bg-gradient-to-r from-orange-400/90 to-orange-700/90 text-white px-[5%] py-8 backdrop-blur-3xl flex items-center justify-center duration-300 hover:translate-y-[-.5rem] cursor-pointer">
+                <p className="text-lg font-semibold tracking-wide uppercase font-merriwether md:text-xl">Join us at Siddartha Smarak</p>
+            </Link>
+        </div>
     )
 }
 

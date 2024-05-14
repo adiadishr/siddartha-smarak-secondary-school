@@ -5,10 +5,10 @@ import routeTo from '../utilities/RouteTo'
 
 const MainHero = () => {
     return (
-        <div className='w-full flex px-[7.5%] pb-48'>
+        <div className='w-full flex px-[7.5%] pb-32'>
             <div className='flex flex-col w-full gap-16 md:flex-row'>
-                <div className='flex w-full'>
-                    <img src={book} className='rounded-sm brightness-75 blur-[.5px]' alt="" />
+                <div className='flex w-full overflow-hidden'>
+                    <img src={book} className='rounded-3xl brightness-75 blur-[.5px]' alt="" />
                 </div>
                 <div className='flex flex-col w-full text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope'>
                     <div className='w-full pb-2 text-2xl font-bold text-center uppercase border-b-2 md:text-start md:w-auto text-sky-900 border-stone-200 font-merriwether'>Siddartha Smarak Secondary School</div>
