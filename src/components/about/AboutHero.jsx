@@ -19,8 +19,8 @@ const AboutHero = () => {
                                 Nestled in the heart of Kapilvastu, our Siddhartha Smarak Secondary School Stands as a beacon of academic excellence and holistic development, catering to the educational needs of over 200+ students annually. With a rich legacy spanning decades, our institution boasts a dynamic learning environment where students thrive academically, socially, and emotionally.
                             </div>
                         </div>
-                        <div className='flex flex-col items-center flex-shrink w-full overflow-hidden md:w-1/2 border-r-4 border-b-4 border-sky-800 rounded-3xl'>
-                            <img src={aboutHeroImage} className='object-cover object-center rounded-3xl brightness-75 saturate-[.9] hover:scale-110 duration-300 md:h-[20rem] w-full' alt="" />
+                        <div className='flex flex-col items-center flex-shrink w-full overflow-hidden md:w-1/2 '>
+                            <img src={aboutHeroImage} className='border-b-4 border-r-4 border-sky-800 object-cover object-center rounded-3xl brightness-75 saturate-[.9] duration-300 md:max-h-[20rem] w-full' alt="" />
                         </div>
                     </div>
                     <div className='relative flex flex-col w-full gap-12 md:flex-row'>
@@ -34,7 +34,7 @@ const AboutHero = () => {
                         <div className='flex flex-col w-full gap-4 md:w-1/2'>
                             <div className='text-2xl/[110%] text-stone-700 font-merriwether pt-4'>Resources</div>
                             <div className='text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope gap-4'>
-                                Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. We pride ourselves on fostering a safe, inclusive, and supportive community where students feel valued, respected, and inspired to reach their highest aspirations. 
+                                Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. We pride ourselves on fostering a safe, inclusive, and supportive community where students feel valued, respected, and inspired to reach their highest aspirations.
                             </div>
                         </div>
                     </div>

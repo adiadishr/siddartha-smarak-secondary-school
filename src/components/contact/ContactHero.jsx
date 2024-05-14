@@ -2,6 +2,7 @@ import { LocateIcon, Mail, Phone } from 'lucide-react'
 import React from 'react'
 import { ImQuotesLeft } from 'react-icons/im'
 import AdmissionDrawer from '../global/AdmissionDrawer'
+import { FaFacebook } from 'react-icons/fa6'
 
 const ContactHero = () => {
     return (
@@ -46,21 +47,32 @@ const ContactHero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="text-lg/[250%] font-manrope flex flex-col items-center justify-center gap-6 pt-28 max-w-8xl md:flex-row">
-                    <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700 ">
-                        <LocateIcon className='mr-4 size-8' />
-                        <span>Kapilvastu, Birgunj</span>
+                <div className='flex flex-col gap-8 pt-28'>
+                    <div className='flex justify-center w-full'>
+                        <p className='text-center heading md:text-start w-max'>Our Details</p>
                     </div>
-                    <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
-                        <Mail className='mr-4 size-8' />
-                        <span>contact@antarikshya.edu</span>
+                    <div className="text-lg/[250%] font-manrope flex flex-col items-center justify-center gap-6  max-w-8xl md:flex-row">
+                        <a target='_blank' href='https://google.com' className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700 ">
+                            <LocateIcon className='mr-4 size-8' />
+                            <span>Kapilvastu, Birgunj</span>
+                        </a>
+                        <a href='mailto:contact@antarikshya.edu.np' className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
+                            <Mail className='mr-4 size-8' />
+                            <span>contact@antarikshya.edu</span>
+                        </a>
+                        <a href="tel:9843011770">
+                            <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
+                                <Phone className='mr-4 size-8' />
+                                <span>+977-1-4780000</span>
+                            </div>
+                        </a>
+                        <a title='Our Facebook' target='_blank' href="https://www.facebook.com/siddharthasmarakofficial">
+                            <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
+                                <FaFacebook className='mr-4 size-8' />
+                                <span>Siddartha Smarak Secondary School</span>
+                            </div>
+                        </a>
                     </div>
-                    <a href="tel:9843011770">
-                        <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
-                            <Phone className='mr-4 size-8' />
-                            <span>+977-1-4780000</span>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>

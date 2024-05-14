@@ -52,7 +52,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div style={{ top: topPos ? 0 : 40 }} className='z-30 duration-300 w-full border-b-2 fixed lg:flex px-[7.5%] bg-white lg:justify-center justify-end items-center py-3 min-h-[74px]'>
+            <div style={{ top: topPos ? 0 : 40 }} className='z-30 duration-300 w-full border-b-2 fixed lg:flex px-[5%] bg-white lg:justify-center justify-end items-center py-3 min-h-[74px]'>
                 <ul className='flex-row items-center justify-between hidden w-full tracking-tight lg:flex font-merriwether'>
                     <div className='flex items-center justify-center gap-8'>
                         <img className='flex h-16 cursor-pointer ' src={logo} onClick={routeToLogo} alt="Logo of Siddartha Smarak Secondary School" />

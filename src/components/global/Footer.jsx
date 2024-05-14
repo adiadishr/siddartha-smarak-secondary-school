@@ -58,7 +58,7 @@ const Footer = () => {
             </div>
             <div className='w-full pt-12 pb-8 h-max px-[7.5%]'>
                 <p className='text-sm text-neutral-400 font-merriwether '>©Siddartha Smarak Secondary School, 2024 All rights reserved</p>
-                <p className='text-sm text-neutral-700 font-manrope'>Developed and Maintained by <a href="https://www.project0rbit.com" target='_blank' className='hover:underline hover:text-black'>Antarikshya</a> </p>
+                <p className='text-sm text-neutral-700 font-manrope'>Developed and Maintained by <a href="https://www.project0rbit.com" target='_blank' className='underline duration-300 hover:text-black'>Antarikshya</a> </p>
             </div>
         </div>
     )

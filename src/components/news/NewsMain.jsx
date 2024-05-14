@@ -12,6 +12,11 @@ import photo1 from '../../assets/parentsDay.jpg'
 import photo2 from '../../assets/prizeDistributions.jpg'
 import photo3 from '../../assets/runningShieldCompetition.jpg'
 import photo4 from '../../assets/sportsDay.jpg'
+import { Link } from "react-router-dom"
+
+const toTop = () => {
+    window.scrollTo({ top: 0 })
+}
 
 const NewsMain = () => {
     return (
@@ -33,7 +38,7 @@ const NewsMain = () => {
                             }} className='relative z-0 aspect-square duration-300 rounded-xl brightness-[.4]  group-hover:brightness-50'>
                             </div>
                             <div className="absolute top-0 flex flex-col w-full h-full py-[2.5%] pr-[5%]">
-                                <a href="#" className="flex flex-col justify-between h-full">
+                                <Link onClick={toTop} to="/BlogPage" className="flex flex-col justify-between h-full">
                                     <div>
                                         <div className="flex justify-between w-full pr-8">
                                             <p className="p-8 pb-0 mb-8 text-lg font-black text-white uppercase md:text-2xl font-merriwether line-clamp-1">
@@ -43,11 +48,11 @@ const NewsMain = () => {
                                                 <FaArrowRight />
                                             </div>
                                         </div>
-                                        <p className=" line-clamp-4 md:line-clamp-5 lg:line-clamp-6 px-8 text-lg/[230%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
+                                        <p className="line-clamp-4 sm:line-clamp-5 lg:line-clamp-6 px-8 text-base/[250%] md:text-lg/[250%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
                                             {card.subtitle}
                                         </p>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </CarouselItem>
                     ))}

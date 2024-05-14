@@ -1,5 +1,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Link } from "react-router-dom"
+import photo1 from '../../assets/parentsDay.jpg'
+import photo2 from '../../assets/prizeDistributions.jpg'
+import photo3 from '../../assets/runningShieldCompetition.jpg'
+import photo4 from '../../assets/sportsDay.jpg'
 
 const routeTo = () => {
     window.scrollTo({ top: 0 })
@@ -31,29 +35,31 @@ const AcademicsHero = () => {
                         <p>Moreover, our school prides itself on fostering a safe, inclusive, and supportive community where students feel valued, respected, and inspired to reach their highest aspirations. With a robust system of student support services in place, including counseling and extracurricular programs, we ensure that every student receives the guidance and encouragement they need to thrive both inside and outside the classroom.</p>
                         <p className="mb-8">Moreover, our school prides itself on fostering a safe, inclusive, and supportive community where students feel valued, respected, and inspired to reach their highest aspirations. With a robust system of student support services in place, including counseling and extracurricular programs, we ensure that every student receives the guidance and encouragement they need to thrive both inside and outside the classroom.</p>
                         <div className="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-2 xl:columns-3 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8 mb-16">
-                            <img src="https://source.unsplash.com/ztpUS4N1xhY" alt="" />
-                            <img src="https://source.unsplash.com/mPFSPqZOO7s" alt="" />
-                            <img src="https://source.unsplash.com/uPEnxrdSKIw" alt="" />
-                            <img src="https://source.unsplash.com/hFKZ5-OT9Ys" alt="" />
-                            <img src="https://source.unsplash.com/xoTt2fjs7d0" alt="" />
-                            <img src="https://source.unsplash.com/Vc2dD4l57og" alt="" />
-                            <img src="https://source.unsplash.com/hqnQWmIt3cY" alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
                         </div>
                         <CallToAction />
                     </TabsContent>
                     <TabsContent className='flex flex-col gap-4 mt-0' value="secondary">
                         <p>As a testament to our commitment to excellence, our school has produced more than 5,000 successful passout who have gone on to make significant contributions to their respective fields and communities. With a legacy of academic achievement and a relentless pursuit of excellence, our secondary school continues to uphold its reputation as a premier institution dedicated to shaping the leaders of tomorrow.
                         </p>
-                        <p>As a testament to our commitment to excellence, our school has produced more than 5,000 successful passout who have gone on to make significant contributions to their respective fields and communities. With a legacy of academic achievement and a relentless pursuit of excellence, our secondary school continues to uphold its reputation as a premier institution dedicated to shaping the leaders of tomorrow.
+                        <p className="mb-8">As a testament to our commitment to excellence, our school has produced more than 5,000 successful passout who have gone on to make significant contributions to their respective fields and communities. With a legacy of academic achievement and a relentless pursuit of excellence, our secondary school continues to uphold its reputation as a premier institution dedicated to shaping the leaders of tomorrow.
                         </p>
                         <div className="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-2 xl:columns-3 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8 mb-16">
-                            <img src="https://source.unsplash.com/uyX3qAQhZVA" alt="" />
-                            <img src="https://source.unsplash.com/LV-NvIcA-Gg" alt="" />
-                            <img src="https://source.unsplash.com/0qnRfgnZIsI" alt="" />
-                            <img src="https://source.unsplash.com/mpwF3Mv2UaU" alt="" />
-                            <img src="https://source.unsplash.com/gfMWhkDCwYM" alt="" />
-                            <img src="https://source.unsplash.com/8KtqjrskUg8" alt="" />
-                            <img src="https://source.unsplash.com/qAaGXj-AOv4" alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
                         </div>
                         <CallToAction />
                     </TabsContent>
@@ -62,18 +68,19 @@ const AcademicsHero = () => {
                             At Siddhartha Smarak Secondary School , we believe in fostering a seamless and transparent admission process to welcome prospective students into our community. To begin the journey towards enrollment, interested parents or guardians are invited to visit our school campus for a personalized tour and to meet with our admissions team. Following this initial visit, families can obtain an admissions packet containing all necessary forms and information.
 
                         </p>
-                        <p>
+                        <p className="mb-8">
                             At Siddhartha Smarak Secondary School , we believe in fostering a seamless and transparent admission process to welcome prospective students into our community. To begin the journey towards enrollment, interested parents or guardians are invited to visit our school campus for a personalized tour and to meet with our admissions team. Following this initial visit, families can obtain an admissions packet containing all necessary forms and information.
 
                         </p>
                         <div className="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-2 xl:columns-3 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8 mb-16">
-                            <img src="https://source.unsplash.com/uyX3qAQhZVA" alt="" />
-                            <img src="https://source.unsplash.com/LV-NvIcA-Gg" alt="" />
-                            <img src="https://source.unsplash.com/0qnRfgnZIsI" alt="" />
-                            <img src="https://source.unsplash.com/mpwF3Mv2UaU" alt="" />
-                            <img src="https://source.unsplash.com/gfMWhkDCwYM" alt="" />
-                            <img src="https://source.unsplash.com/8KtqjrskUg8" alt="" />
-                            <img src="https://source.unsplash.com/qAaGXj-AOv4" alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
+                            <img src={photo1} alt="" />
+                            <img src={photo2} alt="" />
+                            <img src={photo3} alt="" />
+                            <img src={photo4} alt="" />
                         </div>
                         <CallToAction />
                     </TabsContent>
