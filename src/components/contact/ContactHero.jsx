@@ -9,7 +9,7 @@ const ContactHero = () => {
         <div className='pt-12 mt-[130px] px-[5%]'>
             <div className="pb-28">
                 <h2 className="w-full pb-2 text-2xl font-bold text-center uppercase border-b-2 md:text-start md:w-max text-sky-900 border-stone-200 font-merriwether">Siddartha Smarak Secondary School</h2>
-                <p className="text-lg/[250%] text-stone-400 text-center tracking-wide md:text-left font-manrope md:mb-4 mb-12 ">Kapilvastu, Chitwan, Nepal</p>
+                <p className="text-lg/[250%] text-stone-400 text-center tracking-wide md:text-left font-manrope md:mb-4 mb-12 ">Kapilvastu, Lumbini, Nepal</p>
                 <div className="flex flex-col w-full gap-24 md:gap-12 md:flex-row">
                     <div className='flex flex-col order-2 md:w-1/2 md:order-1'>
                         <div className="overflow-hidden bg-white rounded-lg shadow-md">
@@ -31,7 +31,7 @@ const ContactHero = () => {
                                 <div className='text-4xl text-orange-500'>
                                     <ImQuotesLeft />
                                 </div>
-                                <div className='text-4xl font-semibold tracking-wide text-center text-sky-900 font-merriwether'>Connecting Minds, Shaping Futures</div>
+                                <div className='text-4xl font-semibold tracking-wide text-center text-sky-900 font-merriwether'>मनुष्यको सम्पूर्ण आत्मा बुझाउने विद्या अहिलेसम्म निस्केको छैन</div>
                             </div>
                         </div>
                         <div className='gap-4 flex flex-col w-full text-base/[250%] text-stone-700 tracking-wide text-justify font-manrope'>

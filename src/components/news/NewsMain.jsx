@@ -48,7 +48,7 @@ const NewsMain = () => {
                                                 <FaArrowRight />
                                             </div>
                                         </div>
-                                        <p className="line-clamp-4 sm:line-clamp-5 lg:line-clamp-6 px-8 text-base/[250%] md:text-lg/[250%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
+                                        <p className="line-clamp-4 sm:line-clamp-5 px-8 text-base/[250%] md:text-lg/[250%] tracking-tight text-white md:opacity-80 group-hover:opacity-100 duration-300 font-manrope ">
                                             {card.subtitle}
                                         </p>
                                     </div>

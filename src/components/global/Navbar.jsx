@@ -63,6 +63,7 @@ const Navbar = () => {
                         <Link onClick={routeTo} to='/Blog'><NavLink title='Blog' /></Link>
                         <Link onClick={routeTo} to='/Books'> <NavLink title='किताब' /></Link>
                         <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Contact</Link>
+                        <Link onClick={routeTo} to='/Contact' className='duration-300 cursor-pointer hover:text-orange-500'>Gallery</Link>
                     </div>
                     <AdmissionDrawer />
                 </ul>

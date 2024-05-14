@@ -35,22 +35,22 @@ const AdmissionDrawer = ({ place }) => {
                     <DrawerDescription className='text-base font-manrope text-stone-400'>Fill up this form, and we'll contact you ASAP regarding admission and joining us!</DrawerDescription>
                 </DrawerHeader>
                 <hr />
-                <form className="flex flex-col justify-between h-full pb-8 md:pb-0">
-                    <section className="flex flex-col gap-4 mt-4">
+                <form className="flex flex-col justify-between pb-8 md:h-full md:pb-0">
+                    <section className="flex flex-col gap-4 mt-4 mb-8 sm:mb-12">
                         <div className="flex flex-col justify-between gap-4 md:gap-8 md:flex-row">
                             <div className="flex flex-col w-full">
                                 <p className="flex pb-2 text-lg font-merriwether text-sky-900">Name of Guardian:</p>
-                                <input placeholder="Enter Guardian's Name" className="w-full md:p-2 p-1 border-2 font-manrope text-neutral-700" type="text" />
+                                <input placeholder="Enter Guardian's Name" className="w-full p-1 border-2 md:p-2 font-manrope text-neutral-700" type="text" />
                             </div>
                             <div className="flex flex-col w-full">
                                 <p className="flex pb-2 text-lg font-merriwether text-sky-900">Name of Student:</p>
-                                <input placeholder="Enter Student's Name" className="w-full md:p-2 p-1 border-2 font-manrope text-neutral-700" type="text" />
+                                <input placeholder="Enter Student's Name" className="w-full p-1 border-2 md:p-2 font-manrope text-neutral-700" type="text" />
                             </div>
                         </div>
                         <div className="flex flex-col justify-between gap-4 md:gap-8 md:flex-row">
                             <div className="flex flex-col w-full">
                                 <p className="flex pb-2 text-lg font-merriwether text-sky-900">Class:</p>
-                                <select className="w-full md:p-2 p-1 border-2 font-manrope text-neutral-700">
+                                <select className="w-full p-1 border-2 md:p-2 font-manrope text-neutral-700">
                                     <option value="" disabled selected>Choose your class:</option>
                                     <option value="Class 1">Class 1</option>
                                     <option value="Class 2">Class 2</option>
@@ -70,13 +70,13 @@ const AdmissionDrawer = ({ place }) => {
                             </div>
                             <div className="flex flex-col w-full">
                                 <p className="flex pb-2 text-lg font-merriwether text-sky-900">Contact Details:</p>
-                                <input className="w-full md:p-2 p-1 border-2 font-manrope text-neutral-700" placeholder="Enter your phone number" type="text" />
+                                <input className="w-full p-1 border-2 md:p-2 font-manrope text-neutral-700" placeholder="Enter your phone number" type="text" />
                             </div>
                         </div>
                     </section>
                     <input type="submit" className='py-2 font-semibold text-white rounded-md cursor-pointer bg-sky-800/80 hover:bg-sky-800/60' />
                 </form>
-                <DrawerFooter className='px-0 mx-0 hidden md:flex'>
+                <DrawerFooter className='hidden px-0 mx-0 md:flex'>
                     <DrawerClose className="flex items-center ">
                         <Button className="w-full" variant="outline">Cancel</Button>
                     </DrawerClose>
