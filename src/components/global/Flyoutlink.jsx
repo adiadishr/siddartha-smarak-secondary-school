@@ -111,10 +111,10 @@ const NewsAndEventsContent = () => {
                 <a href="#" className="block text-sm hover:underline">
                     Notices
                 </a>
-                <h3 className="font-semibold">Events</h3>
-                <a href="#" className="block text-sm hover:underline">
+                {/* <Link to='/News' className="font-semibold hover:underline pt-3">Events</Link> */}
+                {/* <a href="#" className="block text-sm hover:underline">
                     Latest Events
-                </a>
+                </a> */}
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
                 Contact sales
@@ -171,9 +171,9 @@ const BlogContent = () => {
             <div className="space-y-3">
                 <h3 className="font-semibold">Blogs</h3>
                 <a href="#" className="block text-sm hover:underline">
-                    Latest Blogs
+                    <Link to='/Blog'>Latest Blogs</Link>
                 </a>
-                <a href="#" className="block text-sm font-semibold hover:underline">
+                {/* <a href="#" className="block text-sm font-semibold hover:underline">
                     Featured Blogs
                 </a>
                 <a href="#" className="block text-sm italic hover:underline">
@@ -184,7 +184,7 @@ const BlogContent = () => {
                 </a>
                 <a href="#" className="block text-sm italic hover:underline">
                     नेपाली हाउ, नेपाल मा बसौ ~ Jeshan Pradhan
-                </a>
+                </a> */}
             </div>
             {/* <button className="w-full px-4 py-2 font-semibold transition-colors border-2 rounded-lg border-neutral-950 hover:bg-neutral-950 hover:text-white">
                 Contact sales

@@ -9,9 +9,10 @@ import {
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6"
 import photo1 from '../../assets/parentsDay.jpg'
-import photo2 from '../../assets/prizeDistributions.jpg'
-import photo3 from '../../assets/runningShieldCompetition.jpg'
-import photo4 from '../../assets/sportsDay.jpg'
+import photo5 from '../../assets/classroom.jpg'
+import photo8 from '../../assets/praman.jpg'
+import photo11 from '../../assets/medal.jpg'
+
 import { Link } from "react-router-dom"
 
 const toTop = () => {
@@ -68,27 +69,27 @@ export default NewsMain
 
 const cards = [
     {
-        url: photo4,
+        url: photo11,
         title: "Sports Day",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
+        subtitle: "At Siddhartha Smarak Secondary School, we believe in nurturing not just academic excellence but also holistic development among our students. With this ethos in mind, our annual Sports Day event holds a special place in our school calendar. It's a day filled with excitement, camaraderie, and the celebration of sportsmanship.",
         id: 1,
     },
     {
         url: photo1,
         title: "Annual Day",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
+        subtitle: "Siddhartha Smarak Secondary School's Annual Day event is not just a date on the calendar; it's a culmination of months of preparation, dedication, and anticipation. It's a day where the entire school community comes together to celebrate achievements, embrace diversity, and reaffirm our commitment to excellence in education.",
         id: 2,
     },
     {
-        url: photo3,
+        url: photo8,
         title: "Results Out",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
+        subtitle: "At Siddhartha Smarak Secondary School, we believe in recognizing and celebrating the hard work and achievements of our students. As the school year comes to a close, we are excited to announce the much-awaited results that reflect the dedication and commitment of our students and educators.",
         id: 3,
     },
     {
-        url: photo2,
+        url: photo5,
         title: "Voted Best School",
-        subtitle: "Our school is equipped with state-of-the-art facilities designed to nurture the diverse talents and interests of our student body. From well-equipped science laboratories and computer rooms to extensive sports grounds and recreational spaces, we provide a stimulating environment that encourages exploration and innovation. Our library, stocked with a vast array of books, journals, and digital resources, serves as a hub for intellectual inquiry and research, fostering a culture of lifelong learning.",
+        subtitle: "At Siddhartha Smarak Secondary School, we are thrilled to announce that our commitment to excellence in education has been recognized once again. We are honored to have been voted the best school in our region, a testament to the dedication and hard work of our students, teachers, and staff.",
         id: 4,
     },
 ];

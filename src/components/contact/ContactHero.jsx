@@ -73,20 +73,22 @@ const ContactHero = () => {
               className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700 "
             >
               <LocateIcon className="mr-4 size-8" />
-              <span>Kapilvastu, Birgunj</span>
+              <span>
+                Buddhabhumi, Kapilvastu
+              </span>
             </a>
             <a
               title="Mail Us"
-              href="mailto:contact@antarikshya.edu.np"
+              href="mailto:info.ssmarak@gmail.com"
               className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700"
             >
               <Mail className="mr-4 size-8" />
-              <span>contact@antarikshya.edu</span>
+              <span>info.ssmarak@gmail.com</span>
             </a>
-            <a title="Click to call" href="tel:9843011770">
+            <a title="Click to call" href="tel:076-620128">
               <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
                 <Phone className="mr-4 size-8" />
-                <span>+977-1-4780000</span>
+                <span>+977-1-076-620128</span>
               </div>
             </a>
             <a

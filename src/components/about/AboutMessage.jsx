@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import UseScrollTo from "../utilities/UseScrollTo";
 import signature from "../../assets/signature.png";
+import principal from "../../assets/staff/dilaram.jpg"
 
 const AboutMessage = () => {
   const messageRef = useRef(null);
@@ -47,10 +48,10 @@ const AboutMessage = () => {
               <p>Siddhartha Smarak Secondary School</p>
             </div>
           </div>
-          <div className="flex order-1 w-full h-full mb-8 shadow-lg md:order-2 md:mb-0">
+          <div className="flex order-1 w-full h-[40rem] md:h-full mb-8 shadow-lg md:order-2 md:mb-0">
             <img
-              src="https://source.unsplash.com/random/?white_man"
-              className="object-cover object-center border-b-8 brightness-[.6] duration-300 hover:brightness-75 saturate-50 hover:saturate-100 border-r-8 border-sky-800 rounded-xl"
+              src={principal}
+              className="object-cover object-center border-b-8 brightness-[.8] duration-300 hover:brightness-[.9] saturate-75 hover:saturate-100 border-r-8 border-sky-800 rounded-xl"
               alt="Image of the Principal"
             />
           </div>
