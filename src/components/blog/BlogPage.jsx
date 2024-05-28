@@ -98,7 +98,6 @@ const BlogPage = () => {
           </p>
         </>
       ),
-      // "यो ब्रह्माण्ड, यो अनन्त आकाश, तारा, ग्रह, र आकाशगंगा भरी। अनगिन्ती रहस्य, अनन्त गहिराई, ब्रह्माण्डको सुन्दरतामा म मोहित छु हराइ।  ताराहरू झलमलाउँछन्, जस्तो हजारौं दियो, प्रकाशले भरेको रात्रीको आँगन। चन्द्रमा मुस्कुराउँछ, शान्त र शीतल, रातभरि हेरेर, सपना बुन्छ उज्यालो।  ग्रहहरू परिक्रमा गर्छन्, आफ्नो गतिको लयमा, सबैको यात्रामा एउटा अनौठो कथा। कृष्णविवरको गहिराइ, मेट्न खोज्छ सब कुरा, त्यो अनन्त अँध्यारो, भयमुक्त, रहस्यमय छ।  आकाशगंगाहरूको नृत्य, एक विचित्रको दृश्य, तिनको सुन्दरता, शब्दहरूमा बयान गर्न कठिन। यो ब्रह्माण्ड विशाल, कहिल्यै अन्त्य नहुने कथा, हामी सबै यसकै एक अंश, एक सानो झल्का।  तिमी र म, सारा संसार, यो अनन्त ब्रह्माण्डको एउटा अंशमात्र। रहस्य खोज्न, उत्तर पाउन, यस अनन्त यात्रामा, हामी अघि बढौं।  यो ब्रह्माण्ड, यो जीवनको गहिरो सम्बन्ध, अनन्तको काव्य, एक विशाल बन्धन। अलौकिक सुन्दरताको खोजमा, यो ब्रह्माण्ड, हाम्रो अनन्त यात्रा। ",
     },
     {
       id: 2,
@@ -107,8 +106,51 @@ const BlogPage = () => {
       name: "Sheetal Khanal",
       class: "VI",
       url: blog2,
-      content:
-        "Making mistakes is a natural and integral part of the learning process.yet many of us fear them. We're often taught to avoid failure at all costs, seeing it as something to be ashamed of or a sign of incompetence. Think about the last time you encountered a challenge or tried something new. Perhaps you felt frustrated or discouraged when things didn't go according to plan. But here's the thing – every mistake we make is an opportunity to learn and grow. It's like stumbling upon a hidden treasure in the midst of adversity. Each mistake provides us with valuable feedback and insights that can guide us on our journey toward success. As adults, we come to understand that engaging in the process of learning is more important - and more satisfying - than focusing on doing things perfectly the first time. That process includes mistakes, errors, misconceptions, struggle, practice, and time. We know from our own experiences that when we embrace struggle and see it as an opportunity to grow intellectually, emotionally, socially and/or physically, learning can begin to feel almost magically satisfying.Indeed, some of the most remarkable accomplishments throughout history have arisen from individuals persisting despite encountering failure. Thomas Edison, for instance, made more than a thousand attempts before successfully inventing the light bulb. Similarly, J.K. Rowling faced rejection from multiple publishers before her Harry Potter series soared to become a worldwide sensation. These instances underscore the notion that setbacks are not only unavoidable but also crucial for personal development and creative advancement.Instead of being afraid of failure, we should welcome it as an inherent aspect of our path to success. Through understanding our mistakes, we acquire wisdom, build strength, and ultimately, reach our objectives. Therefore, setbacks should not demoralize us; rather, we should view them as opportunities for growth. With perseverance and an eagerness to learn, our potential knows no bounds.",
+      content: (
+        <>
+          <p>
+            Making mistakes is a natural and integral part of the learning
+            process.yet many of us fear them. We're often taught to avoid
+            failure at all costs, seeing it as something to be ashamed of or a
+            sign of incompetence. Think about the last time you encountered a
+            challenge or tried something new.
+          </p>{" "}
+          <p>
+            Perhaps you felt frustrated or discouraged when things didn't go
+            according to plan. But here's the thing – every mistake we make is
+            an opportunity to learn and grow. It's like stumbling upon a hidden
+            treasure in the midst of adversity. Each mistake provides us with
+            valuable feedback and insights that can guide us on our journey
+            toward success. As adults, we come to understand that engaging in
+            the process of learning is more important - and more satisfying -
+            than focusing on doing things perfectly the first time.
+          </p>{" "}
+          <p>
+            That process includes mistakes, errors, misconceptions, struggle,
+            practice, and time. We know from our own experiences that when we
+            embrace struggle and see it as an opportunity to grow
+            intellectually, emotionally, socially and/or physically, learning
+            can begin to feel almost magically satisfying.Indeed, some of the
+            most remarkable accomplishments throughout history have arisen from
+            individuals persisting despite encountering failure. Thomas Edison,
+            for instance, made more than a thousand attempts before successfully
+            inventing the light bulb. Similarly, J.K. Rowling faced rejection
+            from multiple publishers before her Harry Potter series soared to
+            become a worldwide sensation.
+          </p>{" "}
+          <p className="mb-8">
+            These instances underscore the notion that setbacks are not only
+            unavoidable but also crucial for personal development and creative
+            advancement.Instead of being afraid of failure, we should welcome it
+            as an inherent aspect of our path to success. Through understanding
+            our mistakes, we acquire wisdom, build strength, and ultimately,
+            reach our objectives. Therefore, setbacks should not demoralize us;
+            rather, we should view them as opportunities for growth. With
+            perseverance and an eagerness to learn, our potential knows no
+            bounds.
+          </p>
+        </>
+      ),
     },
     {
       id: 3,
@@ -117,8 +159,53 @@ const BlogPage = () => {
       name: "Punam Khadka",
       class: "VII",
       url: blog3,
-      content:
-        "The term 'emerging technology' typically describes either a novel technology or the ongoing advancement of an existing one. Its interpretation can vary depending on the context, such as its application in media, business, science, or education.Generative Artificial Intelligence (AI) stands at the forefront of technological innovation, representing a paradigm shift in how we approach creativity. By harnessing the power of machine learning algorithms, Generative AI has the remarkable ability to produce original content across various mediums, from visual art to music compositions. This technology has the potential to revolutionize industries, offering novel solutions to complex problems and driving unprecedented levels of innovation. In the realm of art and design, Generative AI opens up a world of possibilities, enabling artists and designers to explore new creative horizons. With the ability to generate diverse and imaginative outputs based on input data, artists can experiment with unique styles, forms, and concepts, pushing the boundaries of traditional artistic expression. Similarly, in fields such as architecture and product design, Generative AI offers invaluable tools for generating complex designs and prototypes, streamlining the creative process and accelerating innovation. However, as with any transformative technology, Generative AI also presents ethical and societal challenges that must be addressed. Concerns about data privacy, algorithmic bias, and the potential for misuse of AI-generated content underscore the need for thoughtful regulation and oversight. Additionally, questions arise about the impact of Generative AI on employment and the role of human creativity in an increasingly automated world. Looking ahead, the future of Generative AI holds both promise and uncertainty. While the technology has the potential to unlock new levels of creativity and innovation, it also raises important questions about its societal impact and ethical implications. As we continue to explore the possibilities of Generative AI, it is essential to approach its development with caution, ensuring that it is used responsibly and ethically to benefit society as a whole.",
+      content: (
+        <>
+          <p>
+            The term 'emerging technology' typically describes either a novel
+            technology or the ongoing advancement of an existing one. Its
+            interpretation can vary depending on the context, such as its
+            application in media, business, science, or education.Generative
+            Artificial Intelligence (AI) stands at the forefront of
+            technological innovation, representing a paradigm shift in how we
+            approach creativity. By harnessing the power of machine learning
+            algorithms, Generative AI has the remarkable ability to produce
+            original content across various mediums, from visual art to music
+            compositions. This technology has the potential to revolutionize
+            industries, offering novel solutions to complex problems and driving
+            unprecedented levels of innovation.
+          </p>{" "}
+          <p>
+            In the realm of art and design, Generative AI opens up a world of
+            possibilities, enabling artists and designers to explore new
+            creative horizons. With the ability to generate diverse and
+            imaginative outputs based on input data, artists can experiment with
+            unique styles, forms, and concepts, pushing the boundaries of
+            traditional artistic expression. Similarly, in fields such as
+            architecture and product design, Generative AI offers invaluable
+            tools for generating complex designs and prototypes, streamlining
+            the creative process and accelerating innovation.
+          </p>{" "}
+          <p>
+            However, as with any transformative technology, Generative AI also
+            presents ethical and societal challenges that must be addressed.
+            Concerns about data privacy, algorithmic bias, and the potential for
+            misuse of AI-generated content underscore the need for thoughtful
+            regulation and oversight. Additionally, questions arise about the
+            impact of Generative AI on employment and the role of human
+            creativity in an increasingly automated world.
+          </p>{" "}
+          <p className="mb-8">
+            Looking ahead, the future of Generative AI holds both promise and
+            uncertainty. While the technology has the potential to unlock new
+            levels of creativity and innovation, it also raises important
+            questions about its societal impact and ethical implications. As we
+            continue to explore the possibilities of Generative AI, it is
+            essential to approach its development with caution, ensuring that it
+            is used responsibly and ethically to benefit society as a whole.
+          </p>
+        </>
+      ),
     },
     {
       id: 5,
@@ -135,10 +222,72 @@ const BlogPage = () => {
       title: "मेरो विद्यालय",
       date: "24/12/24",
       name: "Amit Paudel",
-      class: "V",
+      class: "X",
       url: blog6,
-      content:
-        "Siddhartha Smarak HSS actively engages with the local community, forging partnerships with parents, alumni, and stakeholders to enhance the educational experience and contribute to the welfare of society. The school organizes outreach programs, environmental conservation efforts, and social awareness campaigns, encouraging students to become active agents of positive change in their communities.In conclusion, Siddhartha Smarak Higher Secondary School stands as a beacon of educational excellence, nurturing young minds, fostering character development, and empowering students to realize their full potential. With a commitment to academic rigor, holistic development, cultural values, and community service, the school continues to inspire and uplift generations of students, leaving an indelible mark on the educational landscape of Nepal.",
+      content: (
+        <>
+          <p>
+            Siddhartha Smarak HSS actively engages with the local community,
+            forging partnerships with parents, alumni, and stakeholders to
+            enhance the educational experience and contribute to the welfare of
+            society. The school organizes outreach programs, environmental
+            conservation efforts, and social awareness campaigns, encouraging
+            students to become active agents of positive change in their
+            communities.
+          </p>
+          <h6 className="italic font-bold">Academic Excellence</h6>
+          <p>
+            The school is committed to academic excellence, offering a
+            comprehensive curriculum designed to nurture critical thinking,
+            creativity, and lifelong learning skills among its students. With
+            highly qualified and dedicated faculty members, Siddhartha Smarak
+            HSS provides a supportive learning environment where students are
+            encouraged to explore their interests, pursue their passions, and
+            achieve their academic goals.
+          </p>
+          <h6 className="italic font-bold">Holistic Development</h6>
+          <p>
+            Beyond academics, Siddhartha Smarak HSS places great emphasis on
+            holistic development, recognizing the importance of extracurricular
+            activities, sports, and cultural events in shaping well-rounded
+            individuals. The school offers a wide range of extracurricular
+            programs, including sports competitions, cultural festivals, music
+            and dance performances, art exhibitions, and community service
+            initiatives, providing students with opportunities to discover their
+            talents, build leadership skills, and foster a spirit of teamwork
+            and collaboration.
+          </p>
+          <h6 className="italic font-bold">Cultural and Ethical Values</h6>
+          <p>
+            Embedded within the ethos of Siddhartha Smarak HSS are cultural and
+            ethical values that promote integrity, respect, and social
+            responsibility. Through moral education programs, value-based
+            learning initiatives, and community engagement activities, the
+            school instills in its students a strong sense of ethics,
+            compassion, and civic-mindedness, preparing them to be responsible
+            citizens and leaders of tomorrow.
+          </p>
+          <h6 className="italic font-bold">Community Engagement</h6>
+          <p>
+            Siddhartha Smarak HSS actively engages with the local community,
+            forging partnerships with parents, alumni, and stakeholders to
+            enhance the educational experience and contribute to the welfare of
+            society. The school organizes outreach programs, environmental
+            conservation efforts, and social awareness campaigns, encouraging
+            students to become active agents of positive change in their
+            communities.
+          </p>
+          <p className="mb-8">
+            In conclusion, Siddhartha Smarak Higher Secondary School stands as a
+            beacon of educational excellence, nurturing young minds, fostering
+            character development, and empowering students to realize their full
+            potential. With a commitment to academic rigor, holistic
+            development, cultural values, and community service, the school
+            continues to inspire and uplift generations of students, leaving an
+            indelible mark on the educational landscape of Nepal.
+          </p>
+        </>
+      ),
     },
   ];
 

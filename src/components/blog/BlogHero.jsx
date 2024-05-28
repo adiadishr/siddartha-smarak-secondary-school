@@ -146,7 +146,7 @@ const blogs = [
     title: "मेरो विद्यालय",
     date: "24/12/24",
     name: "Amit Paudel",
-    class: "V",
+    class: "X",
     url: blog6,
     content:
       "Siddhartha Smarak HSS actively engages with the local community, forging partnerships with parents, alumni, and stakeholders to enhance the educational experience and contribute to the welfare of society. The school organizes outreach programs, environmental conservation efforts, and social awareness campaigns, encouraging students to become active agents of positive change in their communities.In conclusion, Siddhartha Smarak Higher Secondary School stands as a beacon of educational excellence, nurturing young minds, fostering character development, and empowering students to realize their full potential. With a commitment to academic rigor, holistic development, cultural values, and community service, the school continues to inspire and uplift generations of students, leaving an indelible mark on the educational landscape of Nepal.",

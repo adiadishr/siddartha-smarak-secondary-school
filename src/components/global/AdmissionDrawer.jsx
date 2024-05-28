@@ -14,8 +14,6 @@ import {
 import { PiStudentFill } from "react-icons/pi";
 import { PhoneCallIcon } from "lucide-react";
 
-
-
 const AdmissionDrawer = ({ place }) => {
     return (
         <Drawer className='overflow-y-scroll'>
