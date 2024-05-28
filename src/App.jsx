@@ -36,7 +36,7 @@ const App = () => {
           <Route exact path='/Blog' component={Blog} />
           <Route exact path='/Books' component={Books} />
           <Route exact path='/Contact' component={Contact} />
-          <Route exact path='/BlogPage' component={BlogPage} />
+          <Route exact path='/blog/:id' component={BlogPage} />
           <Route exact path='/Gallery' component={Gallery} />
         </Switch>
         <Footer />
