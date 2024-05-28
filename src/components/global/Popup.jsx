@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { IoClose } from "react-icons/io5";
 import { motion } from "framer-motion"
+import popupImg from "../../assets/popup.png"
 
 const Popup = () => {
 
@@ -71,8 +72,8 @@ const Popup = () => {
                 </motion.button>
                 <div
                     data-aos="fade-up"
-                    className='flex h-[80vh] w-full mx-[5%] sm:mx-[10%] md:mx-[20%] bg-white items-center justify-center'>
-                    <h1 className='text-6xl text-black'>POPUP</h1>
+                    className='flex h-[80vh] w-full mx-[5%] sm:mx-[10%] md:mx-[20%] items-center justify-center'>
+                    <img src={popupImg} alt="" />
                 </div>
             </motion.div>
             :
