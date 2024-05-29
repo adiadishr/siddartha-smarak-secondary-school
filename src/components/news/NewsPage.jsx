@@ -29,7 +29,7 @@ const NewsPage = () => {
           </Link>
         </div>
         <div className="relative flex flex-col gap-8 md:flex-row">
-          <div className="sticky flex w-full md:w-1/3 h-max shrink top-32">
+          <div className="flex w-full md:sticky md:w-1/3 h-max shrink top-32">
             <img src={news.url} alt={news.title} />
           </div>
           <div className="flex flex-col w-full md:w-2/3 gap-4 tracking-wide font-manrope text-neutral-700 text-lg/[200%]">
