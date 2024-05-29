@@ -65,33 +65,36 @@ const ContactHero = () => {
               Our Details
             </p>
           </div>
-          <div className="text-lg/[250%] font-manrope flex flex-col items-center justify-center gap-6  max-w-8xl md:flex-row">
+          <div className="text-lg/[250%] font-manrope flex flex-wrap flex-col items-center justify-center gap-6  max-w-8xl md:flex-row">
             <a
               title="Our Location"
               target="_blank"
               href="https://maps.app.goo.gl/wBgLZxkXDrxFq2Yc8"
-              className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700 "
+              className="flex items-center px-4 py-2 duration-300 border-2 cursor-default hover:border-neutral-600 border-neutral-400 rounded-xl text-stone-400 hover:text-stone-700 "
             >
               <LocateIcon className="mr-4 size-8" />
-              <span>
-                Buddhabhumi, Kapilvastu
-              </span>
+              <span>Buddhabhumi, Kapilvastu</span>
             </a>
             <a
               title="Mail Us"
               href="mailto:info.ssmarak@gmail.com"
-              className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700"
+              className="flex items-center px-4 py-2 duration-300 border-2 cursor-default hover:border-neutral-600 border-neutral-400 rounded-xl text-stone-400 hover:text-stone-700"
             >
               <Mail className="mr-4 size-8" />
               <span>info.ssmarak@gmail.com</span>
             </a>
-            <a title="Click to call" href="tel:076-620128">
+            <a
+              className="px-4 py-2 border-2 hover:border-neutral-600 border-neutral-400 rounded-xl"
+              title="Click to call"
+              href="tel:076-620128"
+            >
               <div className="flex items-center duration-300 cursor-default text-stone-400 hover:text-stone-700">
                 <Phone className="mr-4 size-8" />
                 <span>+977-1-076-620128</span>
               </div>
             </a>
             <a
+              className="px-4 py-2 border-2 hover:border-neutral-600 border-neutral-400 rounded-xl"
               title="Our Facebook"
               target="_blank"
               href="https://www.facebook.com/siddharthasmarakofficial"
